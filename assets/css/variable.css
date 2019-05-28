@@ -1,0 +1,13 @@
+:root {
+    --body-background-color: #fff;
+    --primary-color: #2098d5;
+    --secodary-color: #253a83;
+    --white-color: #fff;
+    --black-color: #000;
+    --secondary-white-color: #faf9f9;
+    --gray-color: #858484;
+    --regular-font-family: poppins-regular, sans-serif;
+    --transform-font-family: bauerbodoni-std, serif;
+    --dimension: 9.53em;
+    --duration: 1.8s;
+}
