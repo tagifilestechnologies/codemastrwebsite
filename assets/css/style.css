@@ -740,7 +740,7 @@ WORKFLOW AREA
     border-radius: 50%;
     border-style: dashed;
     border-width: 1.5px;
-    border-color: var(--gray-color);
+    border-color: #c5c5c5;
 }
 
 .Project-work-circle-2 {
@@ -783,6 +783,8 @@ WORKFLOW AREA
     border-radius: 50%;
     box-shadow: 0 17px 23.1px 11.9px rgba(0, 0, 0, 0.04);
     position: absolute;
+    bottom: 10px;
+    right: 30px;
     width: 90px;
     height: 90px;
     background-color: #fff;
@@ -791,10 +793,19 @@ WORKFLOW AREA
     background-size: 50%;
 }
 
-*,
- ::after,
- ::before {
-    box-sizing: border-box;
+.workflow-img-circle img {
+    position: relative;
+    width: 64px;
+    height: 48px;
+    top: 20px;
+    left: 15px;
+}
+
+.arrow-1 {
+    width: 100%;
+    max-width: 475px;
+    top: 0;
+    left: 20%;
 }
 
 
@@ -859,44 +870,41 @@ span .primary {
     font-size: 30px;
 }
 
+.m-20 {
+    margin-right: 20%;
+}
+
 .footer-links.active,
 .footer-links::after {
-    font-family: poppins-medium, sans-serif;
+    content: "";
+    font-family: var(--regular-font-family);
     border-bottom: 3px solid var(--primary-color);
     position: relative;
     display: block;
-    width: 40px;
+    width: 30px;
     color: var(--black-color);
     font-size: 17px;
     line-height: 50px;
-}
-
-::after,
-::before {
-    clear: both;
+    font-weight: 600;
 }
 
 .footer-links:hover,
 .footer-links::after {
     border-bottom: 3px solid var(--primary-color);
     position: relative;
-    width: 40px;
-    top: 0;
-}
-
-.footer-links::after,
-.footer-links::before {
-    content: "";
-    display: inline;
-    width: 10%;
+    width: 30px;
+    top: -5px;
 }
 
 .footer-links {
+    font-family: var(--regular-font-family);
+    position: relative;
     display: block;
-    font-size: 17px;
-    font-family: poppins-regular, sans-serif;
-    cursor: pointer;
+    width: 40px;
     color: var(--black-color);
+    font-size: 17px;
+    line-height: 50px;
+    cursor: pointer;
 }
 
 .lets-talk-banner-bg {
@@ -916,6 +924,24 @@ span .primary {
     left: 12%;
 }
 
+.lets-talk-right-banner-bg {
+    position: absolute;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: bottom center;
+    top: -25%;
+    right: -2%;
+}
+
+.lets-talk-right-banner-bg-2 {
+    position: absolute;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: bottom center;
+    top: -5%;
+    right: 1%;
+}
+
 .text-alignment {
     padding-left: 20%;
 }
@@ -927,166 +953,4 @@ Contact Modal Area Start Here
 
 .min-container {
     padding-left: 260px;
-}
-
-
-/* ------------------------------------
-VERTICAL SCROLLBAR y-axis
---------------------------------------*/
-
-.mCustomScrollbar {
-    -ms-touch-action: pinch-zoom;
-    touch-action: pinch-zoom;
-    /* direct pointer events to js */
-}
-
-.mCustomScrollbar.mCS_no_scrollbar,
-.mCustomScrollbar.mCS_touch_action {
-    -ms-touch-action: auto;
-    touch-action: auto;
-}
-
-.mCustomScrollBox {
-    /* contains plugin's markup */
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-    max-width: 100%;
-    outline: none;
-    direction: ltr;
-}
-
-.mCSB_container {
-    /* contains the original content */
-    overflow: hidden;
-    width: auto;
-    height: auto;
-}
-
-.mCSB_inside>.mCSB_container {
-    margin-right: 30px;
-}
-
-.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
-    margin-right: 0;
-}
-
-
-/* non-visible scrollbar */
-
-.mCS-dir-rtl>.mCSB_inside>.mCSB_container {
-    /* RTL direction/left-side scrollbar */
-    margin-right: 0;
-    margin-left: 30px;
-}
-
-.mCS-dir-rtl>.mCSB_inside>.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
-    margin-left: 0;
-}
-
-
-/* RTL direction/left-side scrollbar */
-
-.mCSB_scrollTools {
-    /* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
-    position: absolute;
-    width: 16px;
-    height: auto;
-    left: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-}
-
-.mCSB_outside+.mCSB_scrollTools {
-    right: -26px;
-}
-
-
-/* scrollbar position: outside */
-
-.mCS-dir-rtl>.mCSB_inside>.mCSB_scrollTools,
-.mCS-dir-rtl>.mCSB_outside+.mCSB_scrollTools {
-    /* RTL direction/left-side scrollbar */
-    right: auto;
-    left: 0;
-}
-
-.mCS-dir-rtl>.mCSB_outside+.mCSB_scrollTools {
-    left: -26px;
-}
-
-
-/* RTL direction/left-side scrollbar (scrollbar position: outside) */
-
-.mCSB_scrollTools .mCSB_draggerContainer {
-    /* contains the draggable element and dragger rail markup */
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: auto;
-}
-
-.mCSB_scrollTools a+.mCSB_draggerContainer {
-    margin: 20px 0;
-}
-
-.mCSB_scrollTools .mCSB_draggerRail {
-    width: 2px;
-    height: 100%;
-    margin: 0 auto;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    border-radius: 16px;
-}
-
-.mCSB_scrollTools .mCSB_dragger {
-    /* the draggable element */
-    cursor: pointer;
-    width: 100%;
-    height: 30px;
-    /* minimum dragger height */
-    z-index: 1;
-}
-
-.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-    /* the dragger element */
-    position: relative;
-    width: 4px;
-    height: 100%;
-    margin: 0 auto;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    border-radius: 16px;
-    text-align: center;
-    background: #ccc;
-}
-
-.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
-.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
-    width: 12px;
-    /* auto-expanded scrollbar */
-}
-
-.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded+.mCSB_draggerRail,
-.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
-    width: 8px;
-    /* auto-expanded scrollbar */
-}
-
-.mCSB_scrollTools .mCSB_buttonUp,
-.mCSB_scrollTools .mCSB_buttonDown {
-    display: block;
-    position: absolute;
-    height: 20px;
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    cursor: pointer;
-}
-
-.mCSB_scrollTools .mCSB_buttonDown {
-    bottom: 0;
 }
