@@ -53,7 +53,7 @@ h5,
 .h5,
 h6,
 .h6 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins-regular", sans-serif;
     font-weight: 600;
     margin-bottom: 0px;
     color: var(--black-color);
@@ -96,7 +96,7 @@ h1 {
     font-weight: 700;
     line-height: 75px;
     font-size: 50px;
-    font-family: var(--regular-font-family);
+    font-family: var(--bold-font-family);
 }
 
 h2 {
@@ -107,12 +107,13 @@ h3 {
     font-size: 30px;
     line-height: 80px;
     font-weight: 700;
-    font-family: var(--regular-font-family);
+    font-family: var(--Medium-font-family);
 }
 
 h4 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 30px;
+    line-height: 80px;
+    font-family: var(--Medium-font-family);
 }
 
 h5 {
@@ -252,6 +253,17 @@ h5.subtitle {
 /*---------- COLORS ----------*/
 
 
+/* modal css */
+
+.modal.show .modal-dialog {
+    -webkit-transform: none;
+    transform: none;
+    max-width: 100% !important;
+    padding: 0;
+    margin: 0;
+}
+
+
 /*-- Background Colors --*/
 
 .bg-black {
@@ -363,6 +375,13 @@ img.img-fluid.b-logo {
     font-weight: 700;
     text-transform: capitalize;
     color: #fff;
+}
+
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
+    background-color: var(--white-color);
+    color: var(--black-color);
 }
 
 .navbar-brand span {
@@ -477,6 +496,36 @@ DROPDOWN MENU
 @media (min-width: 1200px) {
     .dropdown-item+.dropdown-item {
         border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: auto;
+    }
+    .navbar-toggler {
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        line-height: 2;
+        display: inline-flex;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+    }
+    .navbar-toggler i {
+        height: 1em;
+        display: inline-block;
+        font-size: 36px;
+    }
+    .left-side-div-text h1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 40px !important;
+        text-transform: uppercase;
+        font-family: var(--roman-font-style) !important;
+        transform: rotate(-90deg) translate(0%, 0);
+        color: var(--secodary-color);
     }
 }
 
@@ -643,7 +692,11 @@ BANNER AREA
     }
 }
 
-@media (min-width: 1200px) {
+.sidebar {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
     .container {
         max-width: 1600px;
     }
@@ -653,6 +706,32 @@ BANNER AREA
     .container {
         max-width: 1166px;
     }
+    /* common style */
+    h1 {
+        font-weight: 700;
+        line-height: 75px;
+        font-size: 48px;
+        font-family: var(--bold-font-family);
+    }
+    h4 {
+        font-size: 25px;
+        line-height: 70px;
+        font-family: var(--Medium-font-family);
+    }
+    /* banner inro section */
+    .img-wrapper {
+        height: 600px;
+        max-width: 400px;
+    }
+    .banner-area .content-padding {
+        padding: 0px 28px 0px 0px;
+    }
+    .arrow-1 {
+        width: 100%;
+        max-width: 460px;
+        top: -15%;
+        left: 12%;
+    }
 }
 
 
@@ -661,8 +740,7 @@ SERVICES AREA
 ----------------------------------*/
 
 .service-intro {
-    padding: 0 120px 0px 0px;
-    text-align: justify;
+    padding: 0 80px 0px 0px;
 }
 
 .service-circle {
@@ -687,6 +765,8 @@ SERVICES AREA
 .service-intro p {
     font-size: 17px;
     line-height: 33px;
+    text-align: justify;
+    color: var(--black-color);
 }
 
 .service-icon:hover {
@@ -711,6 +791,7 @@ ABOUT AREA
 .about-intro-detail p {
     font-size: 17px;
     line-height: 33px;
+    color: var(--black-color);
 }
 
 .btn-white:hover,
@@ -732,10 +813,8 @@ WORKFLOW AREA
 }
 
 .Project-work-circle-1 {
-    top: 15%;
-    left: 15%;
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     border-radius: 50%;
     border-style: dashed;
@@ -755,11 +834,16 @@ WORKFLOW AREA
     border-radius: 50%;
 }
 
+.workflow-heading {
+    position: relative;
+    top: -50%;
+}
+
 .Project-work-circle-3 {
-    top: 31.5%;
-    left: 31.5%;
-    width: 37%;
-    height: 37%;
+    top: 22.6%;
+    left: 22.5%;
+    width: 55%;
+    height: 55%;
     position: absolute;
     border-radius: 50%;
     border-style: solid;
@@ -767,9 +851,35 @@ WORKFLOW AREA
     border-color: #fff;
 }
 
-.right-bottom-position {
-    bottom: 0;
+.left-top-icon {
+    top: -22px;
+    left: -22px;
 }
+
+.right-top-icon {
+    top: -22px;
+    right: -22px;
+}
+
+.left-bottom-icon {
+    bottom: -22px;
+    left: -22px;
+}
+
+.right-bottom-icon {
+    right: -22px;
+    bottom: -22px;
+}
+
+
+/* .right-position {
+    bottom: 0;
+    right: 24%;
+}
+
+.right-ps {
+    right: 6%;
+} */
 
 .workflow-logo {
     filter: brightness(0) invert(1);
@@ -793,6 +903,11 @@ WORKFLOW AREA
     background-size: 50%;
 }
 
+
+/* .ps-left {
+    left: 10%;
+} */
+
 .workflow-img-circle img {
     position: relative;
     width: 64px;
@@ -803,9 +918,15 @@ WORKFLOW AREA
 
 .arrow-1 {
     width: 100%;
-    max-width: 475px;
-    top: 0;
-    left: 20%;
+    max-width: 616px;
+    top: -15%;
+    left: 12%;
+}
+
+.right-align-details p {
+    font-size: 17px;
+    line-height: 33px;
+    color: var(--black-color);
 }
 
 
@@ -841,6 +962,7 @@ EXPERTISE AREA
     font-size: 17px;
     line-height: 33px;
     font-family: var(--regular-font-family);
+    color: var(--black-color);
 }
 
 
@@ -876,35 +998,36 @@ span .primary {
 
 .footer-links.active,
 .footer-links::after {
-    content: "";
-    font-family: var(--regular-font-family);
+    font-family: poppins-medium, sans-serif;
     border-bottom: 3px solid var(--primary-color);
-    position: relative;
-    display: block;
-    width: 30px;
-    color: var(--black-color);
-    font-size: 17px;
-    line-height: 50px;
-    font-weight: 600;
-}
-
-.footer-links:hover,
-.footer-links::after {
-    border-bottom: 3px solid var(--primary-color);
-    position: relative;
-    width: 30px;
-    top: -5px;
-}
-
-.footer-links {
-    font-family: var(--regular-font-family);
     position: relative;
     display: block;
     width: 40px;
     color: var(--black-color);
     font-size: 17px;
     line-height: 50px;
+}
+
+::after,
+::before {
+    clear: both;
+}
+
+.footer-links:hover,
+.footer-links::after {
+    border-bottom: 3px solid var(--primary-color);
+    display: inline-block;
+    width: 30px;
+    top: 0;
+}
+
+.footer-links {
+    display: block;
+    font-size: 17px;
+    line-height: 50px;
+    font-family: poppins-regular, sans-serif;
     cursor: pointer;
+    color: var(--black-color);
 }
 
 .lets-talk-banner-bg {
@@ -946,6 +1069,17 @@ span .primary {
     padding-left: 20%;
 }
 
+.right-bottom-position {
+    bottom: -14%;
+    left: 22%;
+}
+
+.footer-copyright {
+    font-size: 17px;
+    line-height: 42px;
+    color: var(--black-color);
+}
+
 
 /* ------------------------------------
 Contact Modal Area Start Here
@@ -953,4 +1087,13 @@ Contact Modal Area Start Here
 
 .min-container {
     padding-left: 260px;
+}
+
+.map-box {
+    border: 0;
+    top: -3%;
+    left: -25px;
+    width: 100%;
+    height: 102%;
+    position: absolute;
 }
