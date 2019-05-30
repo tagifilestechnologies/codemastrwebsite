@@ -104,8 +104,10 @@ h2 {
 }
 
 h3 {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 30px;
+    line-height: 80px;
+    font-weight: 700;
+    font-family: var(--regular-font-family);
 }
 
 h4 {
@@ -142,7 +144,7 @@ h5.subtitle {
 .btn {
     font: 600 10.5px/1;
     display: inline-block;
-    padding: 15px 45px 15px 45px;
+    padding: 15px 25px 15px 25px;
     text-transform: uppercase;
     border: 2px solid transparent;
     -webkit-transition: all 0.2s;
@@ -190,6 +192,10 @@ h5.subtitle {
     background-color: rgba(255, 255, 255, 0.95);
     color: rgba(0, 0, 0, 0.85);
     border-color: rgba(255, 255, 255, 0.12);
+    -webkit-box-shadow: 0px 83px 155px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0px 83px 155px rgba(0, 0, 0, 0.06);
+    -o-box-shadow: 0px 83px 155px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 83px 155px rgba(0, 0, 0, 0.06);
 }
 
 .btn-white:focus {
@@ -309,8 +315,8 @@ MENU NAVIGATION AREA
     text-transform: uppercase;
 }
 
-.site-navigation .navbar-nav a.active,
-.trans-navigation .navbar-nav a.active {
+.site-navigation .navbar-nav a,
+.trans-navigation .navbar-nav a {
     color: #f5f5f5;
 }
 
@@ -385,11 +391,6 @@ img.img-fluid.b-logo {
 
 .navbar-brand img {
     max-width: 100%;
-}
-
-.trans-navigation.header-white .btn-white {
-    background: #635cdb;
-    color: #fff;
 }
 
 .navbar-expand-lg {
@@ -669,6 +670,9 @@ SERVICES AREA
     width: 128px;
     height: 128px;
     border-radius: 50%;
+    -webkit-box-shadow: 0px 83px 155px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0px 83px 155px rgba(0, 0, 0, 0.06);
+    -o-box-shadow: 0px 83px 155px rgba(0, 0, 0, 0.06);
     box-shadow: 0px 83px 155px rgba(0, 0, 0, 0.06);
 }
 
@@ -678,6 +682,11 @@ SERVICES AREA
     height: 44px;
     left: 33%;
     top: 33%;
+}
+
+.service-intro p {
+    font-size: 17px;
+    line-height: 33px;
 }
 
 .service-icon:hover {
@@ -692,7 +701,392 @@ ABOUT AREA
 .bg-light-gray {
     background-color: var(--light-gray);
 }
-.about-intro-detail{
+
+.about-intro-detail {
     font-size: 17px;
     line-height: 33px;
+    margin: 30px 0px 0px 0px;
+}
+
+.about-intro-detail p {
+    font-size: 17px;
+    line-height: 33px;
+}
+
+.btn-white:hover,
+img:hover {
+    color: var(--primary-color);
+    background-blend-mode: multiply;
+}
+
+
+/*------------------------------------
+WORKFLOW AREA
+----------------------------------*/
+
+.project-work-container {
+    width: 50vh;
+    height: 50vh;
+    position: relative;
+    border-radius: 50%;
+}
+
+.Project-work-circle-1 {
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    border-radius: 50%;
+    border-style: dashed;
+    border-width: 1.5px;
+    border-color: var(--gray-color);
+}
+
+.Project-work-circle-2 {
+    background-image: -moz-linear-gradient(115deg, rgb(37, 58, 131) 0%, rgb(32, 152, 213) 100%);
+    background-image: -webkit-linear-gradient(115deg, rgb(37, 58, 131) 0%, rgb(32, 152, 213) 100%);
+    background-image: -ms-linear-gradient(115deg, rgb(37, 58, 131) 0%, rgb(32, 152, 213) 100%);
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.Project-work-circle-3 {
+    top: 31.5%;
+    left: 31.5%;
+    width: 37%;
+    height: 37%;
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #fff;
+}
+
+.right-bottom-position {
+    bottom: 0;
+}
+
+.workflow-logo {
+    filter: brightness(0) invert(1);
+    width: 50%;
+    left: 25%;
+    top: 20%;
+    position: absolute;
+}
+
+.workflow-img-circle {
+    border-radius: 50%;
+    box-shadow: 0 17px 23.1px 11.9px rgba(0, 0, 0, 0.04);
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+}
+
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+
+/*------------------------------------
+EXPERTISE AREA
+----------------------------------*/
+
+.expertise-col {
+    width: 25%;
+    float: left;
+}
+
+.expertise-box {
+    background-color: #fff;
+    height: 120px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+}
+
+.expertise-grid {
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+    background-color: transparent;
+    background-image: url(../images/icon-set/square-dots.svg);
+}
+
+.expertise-intro-detail-box p {
+    font-size: 17px;
+    line-height: 33px;
+    font-family: var(--regular-font-family);
+}
+
+
+/*------------------------------------
+FOOTER AREA
+----------------------------------*/
+
+.footer-banner {
+    background-image: -moz-linear-gradient(115deg, rgb(37, 58, 131) 0%, rgb(32, 152, 213) 100%);
+    background-image: -webkit-linear-gradient(115deg, rgb(37, 58, 131) 0%, rgb(32, 152, 213) 100%);
+    background-image: -ms-linear-gradient(115deg, rgb(37, 58, 131) 0%, rgb(32, 152, 213) 100%);
+    height: 40vh;
+    border-radius: 0 80px 0 80px;
+}
+
+.primary {
+    color: var(--primary-color);
+}
+
+.secondary {
+    color: var(--secondary-color);
+}
+
+span .secondary,
+span .primary {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.footer-links.active,
+.footer-links::after {
+    font-family: poppins-medium, sans-serif;
+    border-bottom: 3px solid var(--primary-color);
+    position: relative;
+    display: block;
+    width: 40px;
+    color: var(--black-color);
+    font-size: 17px;
+    line-height: 50px;
+}
+
+::after,
+::before {
+    clear: both;
+}
+
+.footer-links:hover,
+.footer-links::after {
+    border-bottom: 3px solid var(--primary-color);
+    position: relative;
+    width: 40px;
+    top: 0;
+}
+
+.footer-links::after,
+.footer-links::before {
+    content: "";
+    display: inline;
+    width: 10%;
+}
+
+.footer-links {
+    display: block;
+    font-size: 17px;
+    font-family: poppins-regular, sans-serif;
+    cursor: pointer;
+    color: var(--black-color);
+}
+
+.lets-talk-banner-bg {
+    position: absolute;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: bottom center;
+    top: 10%;
+}
+
+.lets-talk-banner-bg-2 {
+    position: absolute;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: bottom center;
+    top: 18%;
+    left: 12%;
+}
+
+.text-alignment {
+    padding-left: 20%;
+}
+
+
+/* ------------------------------------
+Contact Modal Area Start Here
+--------------------------------------*/
+
+.min-container {
+    padding-left: 260px;
+}
+
+
+/* ------------------------------------
+VERTICAL SCROLLBAR y-axis
+--------------------------------------*/
+
+.mCustomScrollbar {
+    -ms-touch-action: pinch-zoom;
+    touch-action: pinch-zoom;
+    /* direct pointer events to js */
+}
+
+.mCustomScrollbar.mCS_no_scrollbar,
+.mCustomScrollbar.mCS_touch_action {
+    -ms-touch-action: auto;
+    touch-action: auto;
+}
+
+.mCustomScrollBox {
+    /* contains plugin's markup */
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+    outline: none;
+    direction: ltr;
+}
+
+.mCSB_container {
+    /* contains the original content */
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+
+.mCSB_inside>.mCSB_container {
+    margin-right: 30px;
+}
+
+.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+    margin-right: 0;
+}
+
+
+/* non-visible scrollbar */
+
+.mCS-dir-rtl>.mCSB_inside>.mCSB_container {
+    /* RTL direction/left-side scrollbar */
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+.mCS-dir-rtl>.mCSB_inside>.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+    margin-left: 0;
+}
+
+
+/* RTL direction/left-side scrollbar */
+
+.mCSB_scrollTools {
+    /* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
+    position: absolute;
+    width: 16px;
+    height: auto;
+    left: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mCSB_outside+.mCSB_scrollTools {
+    right: -26px;
+}
+
+
+/* scrollbar position: outside */
+
+.mCS-dir-rtl>.mCSB_inside>.mCSB_scrollTools,
+.mCS-dir-rtl>.mCSB_outside+.mCSB_scrollTools {
+    /* RTL direction/left-side scrollbar */
+    right: auto;
+    left: 0;
+}
+
+.mCS-dir-rtl>.mCSB_outside+.mCSB_scrollTools {
+    left: -26px;
+}
+
+
+/* RTL direction/left-side scrollbar (scrollbar position: outside) */
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+    /* contains the draggable element and dragger rail markup */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+}
+
+.mCSB_scrollTools a+.mCSB_draggerContainer {
+    margin: 20px 0;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    width: 2px;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+}
+
+.mCSB_scrollTools .mCSB_dragger {
+    /* the draggable element */
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    /* minimum dragger height */
+    z-index: 1;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    /* the dragger element */
+    position: relative;
+    width: 4px;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    text-align: center;
+    background: #ccc;
+}
+
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+    width: 12px;
+    /* auto-expanded scrollbar */
+}
+
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded+.mCSB_draggerRail,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+    width: 8px;
+    /* auto-expanded scrollbar */
+}
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown {
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.mCSB_scrollTools .mCSB_buttonDown {
+    bottom: 0;
 }
