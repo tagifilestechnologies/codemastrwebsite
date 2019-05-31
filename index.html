@@ -20,7 +20,7 @@ One hell of a resume, no? Now, let's talk about that seemingly clumsy project of
 
 </head>
 
-<body data-spy="scroll" data-target=".fixed-top">
+<body data-spy="scroll" data-target=".Navbar">
 
     <!--MAIN HEADER AREA END -->
     <nav id="navbar" class="navbar navbar-expand-lg position-absolute w-100 trans-navigation">
@@ -28,57 +28,79 @@ One hell of a resume, no? Now, let's talk about that seemingly clumsy project of
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/logo-codemastr.svg" alt="" class="img-fluid b-logo">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                    Home&nbsp; <span class="navbar-toggler-icon">
                         <i class="fa fa-ellipsis-v"></i>
                     </span>
                   </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-                <ul class="navbar-nav ">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" href="#" id="navbarWelcome" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Home
                             </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link smoth-scroll" href="about.html">Services</a>
+                        <a class="nav-link smoth-scroll" href="#Services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link smoth-scroll" href="service.html">About</a>
+                        <a class="nav-link smoth-scroll" href="#About">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link smoth-scroll" href="pricing.html">Worrkflow</a>
+                        <a class="nav-link smoth-scroll" href="#Workflow">Worrkflow</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link smoth-scroll" href="blog.html">Expertise</a>
+                        <a class="nav-link smoth-scroll" href="#Expertise">Expertise</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!-- side menu section start here -->
-    <div class="sidebar">
+    <div id="sidebar" class="d-none">
         <ul id="slide-out" class="sidenav">
-            <li>
-                <div class="user-view">
-                    <div class="background">
-                        <img src="images/office.jpg">
-                    </div>
-                    <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-                    <a href="#name"><span class="white-text name">John Doe</span></a>
-                    <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-                </div>
+            <li class="nav-item">
+                <a class="nav-link active" href="#" id="navbarWelcome" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Home
+                </a>
             </li>
-            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-            <li><a href="#!">Second Link</a></li>
-            <li>
-                <div class="divider"></div>
+            <li class="nav-item">
+                <a class="nav-link smoth-scroll" href="#Services">Services</a>
             </li>
-            <li><a class="subheader">Subheader</a></li>
-            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            <li class="nav-item">
+                <a class="nav-link smoth-scroll" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link smoth-scroll" href="#Workflow">Worrkflow</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link smoth-scroll" href="#Expertise">Expertise</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link smoth-scroll" href="/#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link smoth-scroll" href="/#">Clients</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link smoth-scroll" href="/#">Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link smoth-scroll" href="/#">Careers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link smoth-scroll" href="/#">Training</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link smoth-scroll" href="/#">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link smoth-scroll" href="#contactModal">Contact</a>
+            </li>
         </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
     </div>
 
 
@@ -150,7 +172,7 @@ One hell of a resume, no? Now, let's talk about that seemingly clumsy project of
         </div>
 
         <!-- Services Area Start Here -->
-        <div class="section" id="section1">
+        <div class="section" id="section1 Services">
             <div class="container">
 
                 <div class="row h-25 mb-4">
@@ -210,9 +232,9 @@ One hell of a resume, no? Now, let's talk about that seemingly clumsy project of
 
 
         <!-- About Section Start Here -->
-        <div class="section bg-light-gray" id="section2">
+        <div class="section bg-light-gray" id="section2 About">
 
-           <div class="container flex-column">
+            <div class="container flex-column">
                 <div class="row justify-content-center">
 
                     <div class="col-lg-6 col-xs-12">
@@ -242,7 +264,7 @@ One hell of a resume, no? Now, let's talk about that seemingly clumsy project of
         </div>
 
         <!-- WORKFLOW AREA START HERE  -->
-        <div class="section" id="section3">
+        <div class="section" id="section3 Workflow">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-2 text-center mb-5">
@@ -253,13 +275,13 @@ One hell of a resume, no? Now, let's talk about that seemingly clumsy project of
                     <!-- Left -->
                     <div class="col-lg-3 col-xs-12 position-relative ps-left">
 
-                        <div class="row position-absolute">
+                        <div class="row position-relative">
                             <div class="right-align-details w-100">
                                 <h3>Meet & Greet</h3>
                                 <p>"Hi! My name's Sally, rhymes with tally.<br/> How do you do today?"A little socializing<br/> wouldn't hurt, would it? </p>
                             </div>
                         </div>
-                        <div class="row position-absolute" style="bottom: 0;">
+                        <div class="row position-relative" style="bottom: 0;">
                             <div class="right-align-details w-100">
                                 <h3>Going live and support</h3>
                                 <p>"And here we go! " Deployment of a project<br/> to the public after rigorous testing. Our<br/> Maintenance team</p>
@@ -299,7 +321,7 @@ One hell of a resume, no? Now, let's talk about that seemingly clumsy project of
                                 <p>"A-ha! So... What's your idea? At this<br/> stage, we go into full discussion and<br/> planning of your project in details</p>
                             </div>
                         </div>
-                        <div class="row position-absolute right-bottom-position">
+                        <div class="row position-relative right-bottom-position">
                             <div class="right-align-details text-right w-100">
                                 <h3>Create the masterpiece</h3>
                                 <p>"Hold on my friend, this geeky part might be<br/> fiendish to you! " Now your project is into<br/> production to create a masterpiece</p>
@@ -312,7 +334,7 @@ One hell of a resume, no? Now, let's talk about that seemingly clumsy project of
         </div>
 
         <!-- EXPERTISE AREA START HERE  -->
-        <div class="section bg-light-gray" id="section3">
+        <div class="section bg-light-gray" id="section3 Expertise">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-xs-12">
@@ -371,7 +393,7 @@ One hell of a resume, no? Now, let's talk about that seemingly clumsy project of
 
         </div>
 
-        <!-- Section 6 - FOOTER -->
+        <!-- FOOTER Area Section Start Here -->
         <div class="section">
             <div class="container">
                 <div class="footer-banner">
@@ -394,8 +416,7 @@ One hell of a resume, no? Now, let's talk about that seemingly clumsy project of
                 <div class="row" style="height: 10vh;"></div>
                 <div class="row">
                     <div class="col">
-                        <img src="assets/images/logo-codemastr.svg" class="mt-3" />
-                        <span class="primary">CODE</span><span class="secondary">MASTR</span>
+                        <img src="assets/images/logo-codemastr-full.svg" class="mt-3" />
                     </div>
                     <div class="col">
                         <span class="footer-links mb-3 active" data-url="/">Home</span>
@@ -430,18 +451,18 @@ One hell of a resume, no? Now, let's talk about that seemingly clumsy project of
             </div>
         </div>
         <!-- Contact Modal -->
-        <div id="contactModal" class="modal fade" role="dialog">
+        <div id="contactModal" class="modal fade p-0" role="dialog">
             <div class="modal-dialog" style="max-width: 90%;">
 
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-body p-0">
-                        <img src="assets/images/icon-set/close-filled.svg" data-dismiss="modal" width="20" height="20" class="model-x" style="z-index: 1;">
+                        <img src="assets/images/icon-set/close-filled.svg" data-dismiss="modal" width="20" height="20" class="model-x modal-close-btn">
 
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="container">
-                                    <img src="static/images/codemastr-icon.png" width="58" height="34" />
+                                <div class="container min-container">
+                                    <img src="assets/images/logo-codemastr.svg" width="90" height="70" />
                                     <h5 class="mt-5">Request a Callback</h5>
                                     <input type="text" class="form-control btn-outline-dark career-home-dropdown mt-4" id="fname" aria-describedby="fname" style="width: 80%;" placeholder="FULL NAME">
 
@@ -453,7 +474,7 @@ One hell of a resume, no? Now, let's talk about that seemingly clumsy project of
                                         <option>NO</option>
                                     </select>
                                     <div class="mt-4">
-                                        <button type="button" class="btn btn-dark btn-lg team-home-btn align-middle">
+                                        <button type="button" class="btn secondary-btn btn-sm align-middle">
                                             SEND <img class="ml-5" src="static/images/arrow-white.svg" width="15"
                                                       height="15"/></button>
                                         <span class="contact-mini-text align-center">We promise to contact you in next 48 hours.</span>
@@ -480,7 +501,7 @@ One hell of a resume, no? Now, let's talk about that seemingly clumsy project of
                                         </div>
                                     </div>
                                     <div class="row mt-4 mb-3">
-                                        <div class="col-1 p-0 contact-icon" style="background-image: url('static/images/contact-icon-4.png')"></div>
+                                        <div class="col-1 p-0 contact-icon"><i class="fa fa-clock-o"></i></div>
                                         <div class="col-8">
                                             <p class="align-center contact-text">Monday - Friday <br> 08:00 am - 05:00 pm
                                             </p>
@@ -514,9 +535,10 @@ One hell of a resume, no? Now, let's talk about that seemingly clumsy project of
         var myFullpage = new fullpage('#fullpage', {
             anchors: ['HOME', 'SERVICES', 'ABOUT', 'WORKFLOW', 'EXPERTISE'],
             // sectionsColor: ['#ffffff', '#1BBC9B', '#7E8F7C'],
-            scrollBar: true
+            scrollBar: true,
+            menu: '#mainNav'
         });
-        var wrap = $("#section1 ");
+        var wrap = $("#section1");
     </script>
 </body>
 

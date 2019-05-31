@@ -6,13 +6,19 @@
     --black-color: #000;
     --secondary-white-color: #faf9f9;
     --gray-color: #858484;
+    --dimension: 9.53em;
+    --duration: 1.8s;
+    --light-gray: #faf9f9;
+}
+
+
+/* font-family css variables */
+
+:root {
     --regular-font-family: "poppins-regular", sans-serif;
     --bold-font-family: "poppins-bold", sans-serif;
     --Medium-font-family: "poppins-Medium", sans-serif;
     --transform-font-family: "bauerbodoni-std", serif;
-    --dimension: 9.53em;
-    --duration: 1.8s;
-    --light-gray: #faf9f9;
 }
 
 
