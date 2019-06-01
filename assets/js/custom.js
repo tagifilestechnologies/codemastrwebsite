@@ -1,9 +1,24 @@
-// applying background color a fixed navigation menu 
+$(document).ready(function() {
 
-document.getElementById('#fullpage').ready("change", function(e) {
-    var dropdown = document.getElementById('mainNav');
-    window.location.href = dropdown.options[dropdown.selectedIndex].getAttribute('id') + '.html';
+    var div = $('nav#navbar');
+    var start = $(div).offset().top;
+
+    $.event.add(window, "scroll", function() {
+        var p = $(window).scrollTop();
+
+        $('nav#navbar').ready(function() {
+            if (p > start) {
+                $(div).addClass('fixed-header');
+                $(div).removeClass('position-absolute trans-navigation');
+            } else {
+                $(div).removeClass('fixed-header');
+                $(div).addClass('position-absolute trans-navigation');
+            }
+        });
+    });
+
 });
+
 
 
 // wrap.on("scroll", function(e) {
@@ -43,17 +58,7 @@ document.getElementById('#fullpage').ready("change", function(e) {
 //     if (scroll >= 2) sticky.addClass('position-fixed w-100 bg-white text-primary');
 //     else sticky.removeClass('position-fixed w-100 bg-white text-primary');
 // });
-$(document).ready(function() {
 
-    $(window).scroll(function() {
-        if ($(window).scrollTop() >= 300) {
-            $('nav').addClass('position-fixed');
-        } else {
-            $('nav').removeClass('position-fixed');
-        }
-    });
-
-});
 
 $('.carousel-linked-nav > li > a').click(function() {
 

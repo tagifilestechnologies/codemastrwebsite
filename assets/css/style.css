@@ -401,6 +401,16 @@ img.img-fluid.b-logo {
     color: #fff;
 }
 
+.fixed-header {
+    color: var(--black-color);
+    background-color: var(--white-color);
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: var(--bold-font-family);
+}
+
 .navbar-fixed {
     position: fixed;
     width: 100%;
@@ -693,9 +703,18 @@ BANNER AREA
 @media screen and (min-width: 1700px) {
     .container {
         max-width: 1600px;
-        -webkit-transition: ease-in-out;
-        -moz-transition: ease-in-out;
-        transition: ease-in-out;
+        -webkit-transition: 0.6s ease-in-out;
+        -moz-transition: 0.6s ease-in-out;
+        transition: 0.6s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1366px;
+        -webkit-transition: 0.6s ease-in-out;
+        -moz-transition: 0.6s ease-in-out;
+        transition: 0.6s ease-in-out;
     }
 }
 
@@ -712,6 +731,9 @@ BANNER AREA
     .container {
         width: 100%;
         padding: 0;
+        -webkit-transition: 0.6s ease-in-out;
+        -moz-transition: 0.6s ease-in-out;
+        transition: 0.6s ease-in-out;
     }
     .navbar-toggler {
         padding: .25rem .75rem;
