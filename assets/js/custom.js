@@ -1,3 +1,4 @@
+// Header Fixed start Here
 $(document).ready(function() {
 
     var div = $('nav#navbar');
@@ -8,10 +9,10 @@ $(document).ready(function() {
 
         $('nav#navbar').ready(function() {
             if (p > start) {
-                $(div).addClass('fixed-header');
+                $(div).addClass('fixed-header slideInDown');
                 $(div).removeClass('position-absolute trans-navigation');
             } else {
-                $(div).removeClass('fixed-header');
+                $(div).removeClass('fixed-header bounce slideInDown');
                 $(div).addClass('position-absolute trans-navigation');
             }
         });
@@ -19,45 +20,10 @@ $(document).ready(function() {
 
 });
 
+// parrax elemtn statement position start here
+$(document).ready(function() {
 
-
-// wrap.on("scroll", function(e) {
-
-//     if (this.scrollTop > 2) {
-//         wrap.removeClass("trans-navigation")
-//         wrap.addClass("position-fixed w-100 bg-white color-black");
-//         wrpa.style("z-index:9999;");
-//     } else {
-//         wrap.removeClass("position-fixed w-100 bg-white color-black");
-//     }
-
-// });
-// function activateNavDots(name, sectionIndex) {
-//     if (options.navigation) {
-//         $('#multiscroll-nav').find('.active').removeClass('active');
-//         if (name) {
-//             $('#multiscroll-nav').find('a[href="#' + name + '"]').addClass('active');
-//         } else {
-//             $('#multiscroll-nav').find('li').eq(sectionIndex).find('a').addClass('active');
-//         }
-//     }
-// }
-// $(document).ready(function() {
-//     var $header = $("#navbar"),
-//         $clone = $header.before($header.clone().addClass("clone"));
-
-//     $(window).on("scroll", function() {
-//         var fromTop = $(window).scrollTop();
-//         $("body").scroll("down", (fromTop > 400));
-//     });
-// });
-// $(window).scroll(function() {
-//     var sticky = $('#navbar'),
-//         scroll = $(window).scrollTop();
-//     var count;
-//     if (scroll >= 2) sticky.addClass('position-fixed w-100 bg-white text-primary');
-//     else sticky.removeClass('position-fixed w-100 bg-white text-primary');
-// });
+});
 
 
 $('.carousel-linked-nav > li > a').click(function() {

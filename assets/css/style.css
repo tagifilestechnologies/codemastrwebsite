@@ -149,7 +149,10 @@ h5.subtitle {
 .btn {
     font: 600 10.5px/1;
     display: inline-block;
-    padding: 15px 25px 15px 25px;
+    padding: 10px 0;
+    height: 74px;
+    line-height: 55px;
+    width: 250px;
     text-transform: uppercase;
     border: 2px solid transparent;
     -webkit-transition: all 0.2s;
@@ -333,7 +336,7 @@ h5.subtitle {
 .overlay.dark-overlay {
     position: absolute;
     top: 0;
-    left: 32%;
+    left: 36.5%;
     max-width: 80%;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secodary-color) 100%);
     height: 100%;
@@ -370,8 +373,8 @@ body.down #navbar.clone {
 }
 
 img.img-fluid.b-logo {
-    max-width: 70px;
-    height: 70px;
+    max-width: 92px;
+    height: 92px;
 }
 
 .navbar-expand-lg.trans-navigation .navbar-nav .nav-link,
@@ -381,7 +384,7 @@ img.img-fluid.b-logo {
 
 .navbar-expand-lg.trans-navigation .navbar-nav .nav-link:last-child,
 .navbar-expand-lg.site-navigation .navbar-nav .nav-link:last-child {
-    padding-right: 0px;
+    padding: 0px 20px;
     font-size: 16px;
     font-weight: 500;
 }
@@ -409,13 +412,20 @@ img.img-fluid.b-logo {
     width: 100%;
     text-transform: uppercase;
     font-family: var(--bold-font-family);
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+    -ms-transition-delay: 2s;
+    transition-delay: 0.9s;
+    -webkit-transition: 0.9s ease-in-out;
+    -moz-transition: 0.9s ease-in-out;
+    -ms-transition: 0.9s ease-in-out;
+    transition: 0.9s ease-in-out;
 }
 
-.navbar-fixed {
-    position: fixed;
-    width: 100%;
-    background-color: var(--white-color);
-    color: var(--black-color);
+.fixed-header .navbar-nav .nav-link:last-child,
+.fixed-header .navbar-nav .nav-link:last-child {
+    padding: 0px 20px;
+    font-size: 16px;
 }
 
 .navbar-brand span {
@@ -458,88 +468,14 @@ img.img-fluid.b-logo {
 }
 
 
-/* ===============================
-DROPDOWN MENU
-================================*/
-
-.navbar-expand-lg.trans-navigation .navbar-nav .nav-link.dropdown-toggle {
-    padding-right: 0px;
-}
-
-.nav-item.dropdown .dropdown-menu {
-    -webkit-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    transition: all 300ms ease;
-    display: block;
-    visibility: hidden;
-    opacity: 0;
-    top: 120%;
-    -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
-    border: 0px;
-    padding: 0px;
-    position: absolute;
-}
-
-.nav-item.dropdown:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    top: 100%;
-}
-
-.dropdown-item:hover {
-    color: #fff;
-    text-decoration: none;
-    background-color: #635cdb;
-}
-
-.dropdown-toggle::after {
-    display: none;
-}
-
-.dropdown-menu {
-    opacity: 0;
-}
-
-.dropdown-menu.show {
-    animation: 0.2s forwards b;
-}
-
-@keyframes b {
-    to {
-        opacity: 1;
-    }
-}
-
-.dropdown-item {
-    font-size: 0.6875rem;
-    font-weight: 500;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    transition: background-color 0.1s;
-    text-transform: uppercase;
-}
-
-@media (min-width: 1200px) {
-    .dropdown-item {
-        padding-top: 0.75rem;
-        padding-bottom: 0.75rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    .dropdown-item+.dropdown-item {
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-    }
-}
-
-
 /*------------------------------------
 BANNER AREA
 ----------------------------------*/
 
 .banner-area .content-padding {
-    padding: 0px 210px 0px 0px;
+    padding: 0px 155px 0px 0px;
+    position: relative;
+    left: 12%;
 }
 
 .content-padding {
@@ -592,11 +528,17 @@ BANNER AREA
     padding: 10px 30px;
 }
 
+.btn i {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
 .left-side-div-text h1 {
     position: absolute;
-    left: -10.1rem;
+    left: -12.3rem;
     top: 60%;
     font-size: 116px;
+    letter-spacing: 14px;
     text-transform: uppercase;
     font-family: var(--transform-font-family);
     transform: rotate(-90deg) translate(15%, 0);
@@ -604,11 +546,11 @@ BANNER AREA
 }
 
 .img-wrapper {
-    height: 70vh;
-    max-width: 28vw;
+    height: 65vh;
+    max-width: 27vw;
     border-radius: 60px 0 0;
     margin: 0 auto;
-    left: 55px;
+    left: 13.7%;
     background: var(--white-color);
     -webkit-box-shadow: 0 83px 155px rgba(0, 0, 0, 0.06);
     -moz-box-shadow: 0 83px 155px rgba(0, 0, 0, 0.06);
@@ -625,8 +567,8 @@ BANNER AREA
 .layer-box {
     margin: 0 auto;
     position: relative;
-    width: 230px;
-    padding: 50px 15px;
+    width: 100%;
+    padding: 50px 85px;
     height: 100%;
 }
 
@@ -636,41 +578,47 @@ BANNER AREA
     height: var(--dimension);
     width: var(--dimension);
     box-shadow: 3px 3px 2px rgba(0, 0, 0, .2);
-    transform: rotateX(50deg) rotateY(0deg) rotateZ(45deg) translateX(4rem) translateY(4rem);
+    -webkit-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateX(0rem) translateY(0rem);
+    -moz-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateX(0rem) translateY(0rem);
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateX(0rem) translateY(0rem);
 }
 
 .layer:nth-child(1) {
-    position: absolute;
+    position: relative;
     background: #253a83;
     margin-top: var(--dimension)/2;
     opacity: 0.6;
-    top: 185px;
-    left: 40px;
+    top: 25%;
+    left: 20%;
+    -webkit-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
+    -moz-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     z-index: 11;
 }
 
 .layer::before {
     content: '';
-    position: absolute;
-    width: 150px;
-    height: 150px;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .layer:nth-child(2) {
     background: #37332f;
     z-index: 9;
     position: relative;
-    top: 140px;
-    left: 25px;
+    top: 0%;
+    left: 20%;
 }
 
 .layer:nth-child(3) {
     background: #f5f5f5;
     position: relative;
-    top: 110px;
+    top: -25%;
     z-index: 8;
-    left: 25px;
+    left: 20%;
+    -webkit-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
+    -moz-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     animation: moveup var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
 }
 
@@ -678,10 +626,14 @@ BANNER AREA
     0%,
     60%,
     100% {
-        transform: rotateX(50deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
+        -webkit-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
+        -moz-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
+        transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
     }
     25% {
-        transform: rotateX(50deg) rotateY(0deg) rotateZ(45deg) translateZ(1em);
+        -webkit-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(1em);
+        -moz-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(1em);
+        transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(1em);
     }
 }
 
@@ -689,10 +641,14 @@ BANNER AREA
     0%,
     60%,
     100% {
-        transform: rotateX(50deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
+        -webkit-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
+        -moz-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
+        transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
     }
     25% {
-        transform: rotateX(50deg) rotateY(0deg) rotateZ(45deg) translateZ(-1em);
+        -webkit-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(-1em);
+        -moz-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(-1em);
+        transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(-1em);
     }
 }
 
@@ -702,14 +658,14 @@ BANNER AREA
 
 @media screen and (min-width: 1700px) {
     .container {
-        max-width: 1600px;
+        max-width: 1400px;
         -webkit-transition: 0.6s ease-in-out;
         -moz-transition: 0.6s ease-in-out;
         transition: 0.6s ease-in-out;
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) and (max-width: 1699px) {
     .container {
         max-width: 1366px;
         -webkit-transition: 0.6s ease-in-out;
