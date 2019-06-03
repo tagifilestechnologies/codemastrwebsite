@@ -580,6 +580,7 @@ BANNER AREA
     box-shadow: 3px 3px 2px rgba(0, 0, 0, .2);
     -webkit-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateX(0rem) translateY(0rem);
     -moz-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateX(0rem) translateY(0rem);
+    -ms-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateX(0rem) translateY(0rem);
     transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateX(0rem) translateY(0rem);
 }
 
@@ -592,6 +593,7 @@ BANNER AREA
     left: 20%;
     -webkit-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     -moz-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
+    -ms-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     z-index: 11;
 }
@@ -619,6 +621,7 @@ BANNER AREA
     left: 20%;
     -webkit-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     -moz-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
+    -ms-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     animation: moveup var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
 }
 
@@ -628,11 +631,13 @@ BANNER AREA
     100% {
         -webkit-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
         -moz-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
+        -ms-tranform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
         transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
     }
     25% {
         -webkit-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(1em);
         -moz-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(1em);
+        -ms-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(1em);
         transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(1em);
     }
 }
@@ -643,11 +648,13 @@ BANNER AREA
     100% {
         -webkit-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
         -moz-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
+        -ms-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
         transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
     }
     25% {
         -webkit-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(-1em);
         -moz-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(-1em);
+        -ms-transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(-1em);
         transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(-1em);
     }
 }
@@ -661,6 +668,7 @@ BANNER AREA
         max-width: 1400px;
         -webkit-transition: 0.6s ease-in-out;
         -moz-transition: 0.6s ease-in-out;
+        -ms-transition: 0.6s ease-in-out;
         transition: 0.6s ease-in-out;
     }
 }
@@ -670,6 +678,7 @@ BANNER AREA
         max-width: 1366px;
         -webkit-transition: 0.6s ease-in-out;
         -moz-transition: 0.6s ease-in-out;
+        -ms-transition: 0.6s ease-in-out;
         transition: 0.6s ease-in-out;
     }
 }
@@ -689,6 +698,7 @@ BANNER AREA
         padding: 0;
         -webkit-transition: 0.6s ease-in-out;
         -moz-transition: 0.6s ease-in-out;
+        -ms-transition: 0.6s ease-in-out;
         transition: 0.6s ease-in-out;
     }
     .navbar-toggler {
@@ -712,6 +722,9 @@ BANNER AREA
         font-size: 40px !important;
         text-transform: uppercase;
         font-family: var(--roman-font-style) !important;
+        -webkit-transform: rotate(-90deg) translate(0%, 0);
+        -moz-transform: rotate(-90deg) translate(0%, 0);
+        -ms-transform: rotate(-90deg) translate(0%, 0);
         transform: rotate(-90deg) translate(0%, 0);
         color: var(--secodary-color);
     }
@@ -730,6 +743,7 @@ BANNER AREA
         background: var(--white-color);
         -webkit-box-shadow: 0 83px 155px rgba(0, 0, 0, 0.06);
         -moz-box-shadow: 0 83px 155px rgba(0, 0, 0, 0.06);
+        -ms-box-shadow: 0 83px 155px rgba(0, 0, 0, 0.06);
         box-shadow: 0 83px 155px rgba(0, 0, 0, 0.06);
         position: relative;
     }
@@ -761,6 +775,9 @@ BANNER AREA
         font-size: 40px !important;
         text-transform: uppercase;
         font-family: var(--roman-font-style) !important;
+        -webkit-transform: rotate(-90deg) translate(0%, 0);
+        -moz-transform: rotate(-90deg) translate(0%, 0);
+        -ms-transform: rotate(-90deg) translate(0%, 0);
         transform: rotate(-90deg) translate(0%, 0);
         color: var(--secodary-color);
     }
@@ -814,7 +831,7 @@ SERVICES AREA
     border-radius: 50%;
     -webkit-box-shadow: 0px 83px 155px rgba(0, 0, 0, 0.06);
     -moz-box-shadow: 0px 83px 155px rgba(0, 0, 0, 0.06);
-    -o-box-shadow: 0px 83px 155px rgba(0, 0, 0, 0.06);
+    -ms-box-shadow: 0px 83px 155px rgba(0, 0, 0, 0.06);
     box-shadow: 0px 83px 155px rgba(0, 0, 0, 0.06);
 }
 
