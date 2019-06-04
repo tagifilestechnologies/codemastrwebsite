@@ -106,7 +106,7 @@ h2 {
 h3 {
     font-size: 30px;
     line-height: 80px;
-    font-weight: 700;
+    font-weight: 100;
     font-family: var(--Medium-font-family);
 }
 
@@ -416,6 +416,10 @@ img.img-fluid.b-logo {
     -moz-transition-delay: 2s;
     -ms-transition-delay: 2s;
     transition-delay: 0.9s;
+    -ms-box-shadow: 0 4px 10px 0.9px rgba(0, 0, 0, 3%);
+    -moz-box-shadow: 0 4px 10px 0.9px rgba(0, 0, 0, 3%);
+    -webkit-box-shadow: 0 4px 10px 0.9px rgba(0, 0, 0, 3%);
+    box-shadow: 0 4px 10px 0.9px rgba(0, 0, 0, 3%);
     -webkit-transition: 0.9s ease-in-out;
     -moz-transition: 0.9s ease-in-out;
     -ms-transition: 0.9s ease-in-out;
@@ -821,7 +825,7 @@ SERVICES AREA
 ----------------------------------*/
 
 .service-intro {
-    padding: 0 80px 0px 0px;
+    padding: 0 0px 0px 0px;
 }
 
 .service-circle {
@@ -872,7 +876,7 @@ ABOUT AREA
 .about-intro-detail p {
     font-size: 17px;
     line-height: 33px;
-    color: var(--black-color);
+    color: var(--info-color);
 }
 
 .btn-white:hover,
@@ -894,12 +898,14 @@ WORKFLOW AREA
 }
 
 .Project-work-circle-1 {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     position: absolute;
     border-radius: 50%;
     border-style: dashed;
     border-width: 1.5px;
+    top: 12%;
+    right: 6%;
     border-color: #c5c5c5;
 }
 
@@ -917,7 +923,7 @@ WORKFLOW AREA
 
 .workflow-heading {
     position: relative;
-    top: -50%;
+    top: 0%;
 }
 
 .Project-work-circle-3 {
@@ -1000,8 +1006,8 @@ WORKFLOW AREA
 .arrow-1 {
     width: 100%;
     max-width: 616px;
-    top: -15%;
-    left: 12%;
+    top: 0%;
+    left: 5%;
 }
 
 .right-align-details p {
@@ -1022,8 +1028,8 @@ EXPERTISE AREA
 
 .expertise-box {
     background-color: #fff;
-    height: 120px;
-    width: 120px;
+    min-height: 180px;
+    max-width: 180px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 80%;
@@ -1037,6 +1043,11 @@ EXPERTISE AREA
     background-size: 80%;
     background-color: transparent;
     background-image: url(../images/icon-set/square-dots.svg);
+}
+
+.expertise-box img {
+    display: block;
+    margin: 10% auto;
 }
 
 .expertise-intro-detail-box p {
@@ -1152,6 +1163,10 @@ span .primary {
 
 .right-bottom-position {
     bottom: -14%;
+}
+
+.left-bottom-postion {
+    bottom: -28%;
 }
 
 .footer-copyright {
