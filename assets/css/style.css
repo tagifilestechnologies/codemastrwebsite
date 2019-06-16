@@ -14,7 +14,7 @@
 @import url(variable.css);
 body {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 26px;
     font-family: var(--regular-font-family);
     color: var(--gray-color);
@@ -149,16 +149,15 @@ h5.subtitle {
 .btn {
     font: 600 10.5px/1;
     display: inline-block;
-    padding: 10px 0;
-    height: 74px;
-    line-height: 55px;
-    width: 250px;
+    height: 50px;
+    line-height: 36px;
+    max-width: 250px;
     text-transform: uppercase;
     border: 2px solid transparent;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
     border-radius: 0px;
-    font-weight: 600;
+    font-weight: lighter;
     font-size: 17px;
     letter-spacing: 1px;
     border-radius: none;
@@ -328,16 +327,14 @@ h5.subtitle {
 .overlay {
     position: absolute;
     top: 0px;
-    left: 0px;
+    right: 0px;
     width: 100%;
     height: 100%;
 }
 
 .overlay.dark-overlay {
     position: absolute;
-    top: 0;
-    left: 36.5%;
-    max-width: 80%;
+    max-width: 71.5%;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secodary-color) 100%);
     height: 100%;
     border-radius: 0px 0px 0px 80px;
@@ -373,8 +370,8 @@ body.down #navbar.clone {
 }
 
 img.img-fluid.b-logo {
-    max-width: 92px;
-    height: 92px;
+    max-width: 100%;
+    height: 100%;
 }
 
 .navbar-expand-lg.trans-navigation .navbar-nav .nav-link,
@@ -385,7 +382,7 @@ img.img-fluid.b-logo {
 .navbar-expand-lg.trans-navigation .navbar-nav .nav-link:last-child,
 .navbar-expand-lg.site-navigation .navbar-nav .nav-link:last-child {
     padding: 0px 20px;
-    font-size: 16px;
+    font-size: 80%;
     font-weight: 500;
 }
 
@@ -479,11 +476,10 @@ BANNER AREA
 .banner-area .content-padding {
     padding: 0px 155px 0px 0px;
     position: relative;
-    left: 12%;
 }
 
 .content-padding {
-    padding: 180px 0px 80px;
+    padding: 13% 0px 13%;
 }
 
 .banner-content {
@@ -499,12 +495,12 @@ BANNER AREA
     font-weight: 700;
     line-height: 75px;
     font-size: 50px;
-    margin-top: 0px;
+    margin-top: 40px;
 }
 
 .hero-intro {
-    margin-top: 40px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .banner-content .subtitle {
@@ -517,7 +513,6 @@ BANNER AREA
 }
 
 .banner-content p {
-    margin: 20px 0px;
     color: #eee;
     font-size: 17px;
     line-height: 34px;
@@ -538,29 +533,26 @@ BANNER AREA
 }
 
 .left-side-div-text h1 {
-    position: absolute;
-    left: -12.3rem;
-    top: 60%;
-    font-size: 116px;
-    letter-spacing: 14px;
+    position: relative;
+    font-size: 68px;
+    letter-spacing: 10px;
     text-transform: uppercase;
     font-family: var(--transform-font-family);
-    transform: rotate(-90deg) translate(15%, 0);
+    transform: rotate(-90deg) translate(-52%, -260%);
     color: var(--secodary-color);
+    text-align: center;
 }
 
 .img-wrapper {
     height: 65vh;
     max-width: 27vw;
     border-radius: 60px 0 0;
-    margin: 0 auto;
-    left: 13.7%;
+    margin-left: 87px;
     background: var(--white-color);
     -webkit-box-shadow: 0 83px 155px rgba(0, 0, 0, 0.06);
     -moz-box-shadow: 0 83px 155px rgba(0, 0, 0, 0.06);
     box-shadow: 0 83px 155px rgba(0, 0, 0, 0.06);
     position: relative;
-    top: 20px;
 }
 
 
@@ -578,6 +570,7 @@ BANNER AREA
 
 .layer {
     display: block;
+    margin: 0 auto;
     position: relative;
     height: var(--dimension);
     width: var(--dimension);
@@ -593,8 +586,7 @@ BANNER AREA
     background: #253a83;
     margin-top: var(--dimension)/2;
     opacity: 0.6;
-    top: 25%;
-    left: 20%;
+    top: 15%;
     -webkit-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     -moz-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     -ms-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
@@ -613,16 +605,14 @@ BANNER AREA
     background: #37332f;
     z-index: 9;
     position: relative;
-    top: 0%;
-    left: 20%;
+    bottom: 15%;
 }
 
 .layer:nth-child(3) {
     background: #f5f5f5;
     position: relative;
-    top: -25%;
     z-index: 8;
-    left: 20%;
+    bottom: 45%;
     -webkit-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     -moz-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     -ms-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
@@ -696,7 +686,6 @@ BANNER AREA
     }
 }
 
-<<<<<<< HEAD
 @media screen and (min-height: 620px) {
      :root {
         --dimention: 10em;
@@ -813,8 +802,6 @@ BANNER AREA
     }
 }
 
-=======
->>>>>>> 5436eaa681318eb2b638a5b93fbae2934f301e6e
 @media screen and (min-device-width: 375px) and (max-device-width: 990px) and (-webkit-max-device-pixel-ratio: 3.5) {
     .container {
         width: 100%;
@@ -923,10 +910,6 @@ BANNER AREA
         font-family: var(--Medium-font-family);
     }
     /* banner inro section */
-    .img-wrapper {
-        height: 600px;
-        max-width: 400px;
-    }
     .banner-area .content-padding {
         padding: 0px 28px 0px 0px;
     }
@@ -1147,7 +1130,6 @@ EXPERTISE AREA
 
 .expertise-box {
     background-color: #fff;
-    min-height: 180px;
     max-width: 180px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1166,7 +1148,8 @@ EXPERTISE AREA
 
 .expertise-box img {
     display: block;
-    margin: 10% auto;
+    margin: 0% auto;
+    padding: 40% 0%;
 }
 
 .expertise-intro-detail-box p {
@@ -1300,11 +1283,7 @@ Contact Modal Area Start Here
 --------------------------------------*/
 
 .min-container {
-<<<<<<< HEAD
     padding-left: 50px;
-=======
-    padding-left: 260px;
->>>>>>> 5436eaa681318eb2b638a5b93fbae2934f301e6e
 }
 
 .map-box {
