@@ -686,7 +686,7 @@ BANNER AREA
     }
 }
 
-<<<<<<< HEAD @media screen and (min-height: 620px) {
+@media screen and (min-height: 620px) {
      :root {
         --dimention: 10em;
     }
@@ -802,7 +802,7 @@ BANNER AREA
     }
 }
 
-=======>>>>>>>5436eaa681318eb2b638a5b93fbae2934f301e6e @media screen and (min-device-width: 375px) and (max-device-width: 990px) and (-webkit-max-device-pixel-ratio: 3.5) {
+@media screen and (min-device-width: 375px) and (max-device-width: 990px) and (-webkit-max-device-pixel-ratio: 3.5) {
     .container {
         width: 100%;
         padding: 0;
