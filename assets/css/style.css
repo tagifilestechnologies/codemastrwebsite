@@ -166,7 +166,9 @@ h5.subtitle {
 
 
 /*---------- BUTTONS ----------*/
-
+.big-spacer{
+    padding: 80px;
+}
 .btn {
     font: 600 10.5px/1;
     display: inline-block;
@@ -184,7 +186,22 @@ h5.subtitle {
     border-radius: none;
     transition: .6s ease-in-out;
 }
-
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(4em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 11px;
+    font-family: var(--regular-font-family);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
 .btn:focus,
 .btn:active,
 .btn:active:focus {
@@ -355,7 +372,7 @@ h5.subtitle {
 
 .overlay.dark-overlay {
     position: absolute;
-    max-width: 71.5%;
+    max-width: 68.6vw;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secodary-color) 100%);
     height: 100%;
     border-radius: 0px 0px 0px 80px;
@@ -444,10 +461,10 @@ img.img-fluid.b-logo {
     transition: 0.9s ease-in-out;
 }
 
-.fixed-header .navbar-nav .nav-link:last-child,
-.fixed-header .navbar-nav .nav-link:last-child {
+.fixed-header .navbar-nav .nav-link:last-child, .fixed-header .navbar-nav .nav-link:last-child {
     padding: 0px 20px;
     font-size: 16px;
+    line-height: 3.5;
 }
 
 .navbar-brand span {
@@ -550,7 +567,7 @@ BANNER AREA
 
 .btn i {
     font-size: 20px;
-    margin-left: 50px;
+    margin-left: 5px;
 }
 
 .left-side-div-text h1 {
@@ -607,7 +624,7 @@ BANNER AREA
     background: #253a83;
     margin-top: var(--dimension)/2;
     opacity: 0.6;
-    top: 15%;
+    top: 25%;
     -webkit-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     -moz-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     -ms-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
@@ -626,14 +643,14 @@ BANNER AREA
     background: #37332f;
     z-index: 9;
     position: relative;
-    bottom: 15%;
+    bottom: -10%;
 }
 
 .layer:nth-child(3) {
     background: #f5f5f5;
     position: relative;
     z-index: 8;
-    bottom: 45%;
+    bottom: 5%;
     -webkit-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     -moz-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     -ms-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
@@ -707,7 +724,7 @@ BANNER AREA
     }
 }
 
-@media screen and (min-height: 620px) {
+@media screen and (max-height: 620px) {
      :root {
         --dimention: 10em;
     }
@@ -896,13 +913,11 @@ BANNER AREA
         border: 1px solid transparent;
         border-radius: .25rem;
     }
-    
     .navbar-toggler i {
         height: 1em;
         display: inline-block;
         font-size: 36px;
     }
-
     .left-side-div-text h1 {
         position: absolute;
         left: 0;
@@ -1310,11 +1325,22 @@ Contact Modal Area Start Here
 .min-container {
     padding-left: 50px;
 }
-
-.contact-icon {
-    font-size: 40px;
+.contact-icon{
+    display: block;
 }
 
+.contact-icon i {
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secodary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-btn{
+    display: none;
+}
 .map-box {
     border: 0;
     top: 0;
