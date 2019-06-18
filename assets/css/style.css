@@ -21,6 +21,27 @@ body {
     position: relative;
 }
 
+::-moz-placeholder,
+::-webkit-input-placeholder,
+::-ms-input-placeholder {
+    font-size: 16px;
+}
+
+.btn-outline-dark.focus,
+.btn-outline-dark:focus {
+    box-shadow: unset;
+}
+
+.btn-outline-dark:hover {
+    color: #000;
+    background-color: unset;
+    border-color: unset;
+}
+
+:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
 p {
     line-height: 28px;
     font-size: 15px;
@@ -686,7 +707,7 @@ BANNER AREA
     }
 }
 
-<<<<<<< HEAD @media screen and (min-height: 620px) {
+@media screen and (min-height: 620px) {
      :root {
         --dimention: 10em;
     }
@@ -802,7 +823,7 @@ BANNER AREA
     }
 }
 
-=======>>>>>>>5436eaa681318eb2b638a5b93fbae2934f301e6e @media screen and (min-device-width: 375px) and (max-device-width: 990px) and (-webkit-max-device-pixel-ratio: 3.5) {
+@media screen and (min-device-width: 375px) and (max-device-width: 990px) and (-webkit-max-device-pixel-ratio: 3.5) {
     .container {
         width: 100%;
         padding: 0;
@@ -1284,6 +1305,10 @@ Contact Modal Area Start Here
 
 .min-container {
     padding-left: 50px;
+}
+
+.contact-icon {
+    font-size: 40px;
 }
 
 .map-box {

@@ -1980,9 +1980,9 @@ pre code {
 .form-control:focus {
     color: #495057;
     background-color: #fff;
-    border-color: #80bdff;
+    /* border-color: #80bdff; */
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
 }
 
 .form-control::-webkit-input-placeholder {
@@ -3116,7 +3116,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-dark {
     color: #343a40;
-    border-color: #343a40
+    border-color: #343a40;
 }
 
 .btn-outline-dark:hover {
@@ -8288,11 +8288,8 @@ button.bg-dark:hover {
 
 .mt-3,
 .my-3 {
-<<<<<<< HEAD
-    margin-top: 0rem!important;
-=======
-    margin-top: 1rem!important
->>>>>>> 5436eaa681318eb2b638a5b93fbae2934f301e6e
+    <<<<<<< HEAD margin-top: 0rem!important;
+    =======margin-top: 1rem!important >>>>>>> 5436eaa681318eb2b638a5b93fbae2934f301e6e
 }
 
 .mr-3,
@@ -8316,11 +8313,7 @@ button.bg-dark:hover {
 
 .mt-4,
 .my-4 {
-<<<<<<< HEAD
-    /* margin-top: 1.5rem!important */
-=======
     margin-top: 1.5rem!important
->>>>>>> 5436eaa681318eb2b638a5b93fbae2934f301e6e
 }
 
 .mr-4,
