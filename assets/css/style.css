@@ -376,7 +376,7 @@ h5.subtitle {
 
 .overlay.dark-overlay {
     position: absolute;
-    max-width: 68.6vw;
+    max-width: 71.18vw;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secodary-color) 100%);
     height: 100%;
     border-radius: 0px 0px 0px 80px;
@@ -581,7 +581,7 @@ BANNER AREA
     letter-spacing: 10px;
     text-transform: uppercase;
     font-family: var(--transform-font-family);
-    transform: rotate(-90deg) translate(-52%, -260%);
+    transform: rotate(-90deg) translate(-18vw, -97vh);
     color: var(--secodary-color);
     text-align: center;
 }
@@ -590,7 +590,7 @@ BANNER AREA
     height: 65vh;
     max-width: 27vw;
     border-radius: 60px 0 0;
-    margin-left: 87px;
+    margin-left: 25%;
     background: var(--white-color);
     -webkit-box-shadow: 0 83px 155px rgba(0, 0, 0, 0.06);
     -moz-box-shadow: 0 83px 155px rgba(0, 0, 0, 0.06);
@@ -731,10 +731,18 @@ BANNER AREA
 
 @media screen and (max-height: 680px) {
      :root {
-        --dimention: 10em;
+        --dimention: 10vw;
     }
     .container {
-        max-width: 1100px;
+        max-width: 80vw !important;
+    }
+    .overlay.dark-overlay {
+        max-width: 69.25vw !important;
+        height: 100vh !important;
+    }
+    .navbar-expand-lg.trans-navigation .navbar-nav .nav-link:last-child,
+    .navbar-expand-lg.site-navigation .navbar-nav .nav-link:last-child {
+        padding: 10px 20px;
     }
     h1 {
         font-weight: 700;
@@ -744,28 +752,25 @@ BANNER AREA
     }
     .navbar-expand-lg.trans-navigation .navbar-nav .nav-link:last-child,
     .navbar-expand-lg.site-navigation .navbar-nav .nav-link:last-child {
-        font-size: 14px;
+        font-size: 16px;
     }
     img.img-fluid.b-logo {
         max-width: 60px !important;
         height: 60px !important;
     }
     .banner-content .banner-title {
-        line-height: 60px;
-        font-size: 45px;
-    }
-    .overlay.dark-overlay {
-        left: 32%;
+        line-height: 71px;
+        font-size: 4vw;
     }
     .img-wrapper {
         height: 65vh !important;
-        max-width: 350px !important;
-        left: 7.7%;
+        max-width: 22vw !important;
+        left: 0%;
         top: 0;
     }
     .left-side-div-text h1 {
-        left: -6.5rem;
-        top: 50%;
+        left: 31.4vw;
+        top: 0;
         font-size: 75px;
         letter-spacing: 5px;
     }
@@ -1340,8 +1345,8 @@ Contact Modal Area Start Here
     -webkit-text-fill-color: transparent;
 }
 
-.contact-btn {
-    display: none;
+.Contact-btn {
+    visibility: hidden;
 }
 
 .map-box {
