@@ -376,7 +376,7 @@ h5.subtitle {
 
 .overlay.dark-overlay {
     position: absolute;
-    max-width: 71.18vw;
+    max-width: 67.18vw;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secodary-color) 100%);
     height: 100%;
     border-radius: 0px 0px 0px 80px;
@@ -423,8 +423,8 @@ img.img-fluid.b-logo {
 
 .navbar-expand-lg.trans-navigation .navbar-nav .nav-link:last-child,
 .navbar-expand-lg.site-navigation .navbar-nav .nav-link:last-child {
-    padding: 0px 20px;
-    font-size: 80%;
+    padding: 10px 20px;
+    font-size: 100%;
     font-weight: 500;
 }
 
@@ -517,7 +517,7 @@ BANNER AREA
 ----------------------------------*/
 
 .banner-area .content-padding {
-    padding: 0px 155px 0px 0px;
+    padding: 0px 0px 0px 0px;
     position: relative;
 }
 
@@ -536,9 +536,10 @@ BANNER AREA
 .banner-content .banner-title {
     color: #fff;
     font-weight: 700;
-    line-height: 75px;
-    font-size: 50px;
-    margin-top: 40px;
+    line-height: 90px;
+    font-size: 75px;
+    /* margin-top: 40px; */
+    /* margin-bottom: 59px; */
 }
 
 .hero-intro {
@@ -564,6 +565,7 @@ BANNER AREA
 
 .banner-content .btn {
     margin-right: 12px;
+    font-weight: 100;
 }
 
 .btn-sm {
@@ -575,20 +577,27 @@ BANNER AREA
     margin-left: 5px;
 }
 
+.navbar-nav {
+    max-width: 450px;
+}
+
 .left-side-div-text h1 {
     position: relative;
-    font-size: 68px;
+    font-size: 115px;
     letter-spacing: 10px;
     text-transform: uppercase;
     font-family: var(--transform-font-family);
-    transform: rotate(-90deg) translate(-18vw, -97vh);
+    -webkit-transform: rotate(-90deg) translate(-20vw, -22.3vh);
+    -moz-transform: rotate(-90deg) translate(-20vw, -22.3vh);
+    -ms-transform: rotate(-90deg) translate(-20vw, -22.3vh);
+    transform: rotate(-90deg) translate(-20vw, -22.3vh);
     color: var(--secodary-color);
     text-align: center;
 }
 
 .img-wrapper {
     height: 65vh;
-    max-width: 27vw;
+    max-width: 32vw;
     border-radius: 60px 0 0;
     margin-left: 25%;
     background: var(--white-color);
@@ -629,7 +638,7 @@ BANNER AREA
     background: #253a83;
     margin-top: var(--dimension)/2;
     opacity: 0.6;
-    top: 25%;
+    top: 15%;
     -webkit-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     -moz-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     -ms-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
@@ -648,14 +657,14 @@ BANNER AREA
     background: #37332f;
     z-index: 9;
     position: relative;
-    bottom: -10%;
+    bottom: 6%;
 }
 
 .layer:nth-child(3) {
     background: #f5f5f5;
     position: relative;
     z-index: 8;
-    bottom: 5%;
+    bottom: 25%;
     -webkit-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     -moz-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
     -ms-animation: movedown var(--duration) cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
@@ -733,6 +742,9 @@ BANNER AREA
      :root {
         --dimention: 10vw;
     }
+    .navbar-nav {
+        max-width: 554px;
+    }
     .container {
         max-width: 80vw !important;
     }
@@ -769,23 +781,27 @@ BANNER AREA
         top: 0;
     }
     .left-side-div-text h1 {
-        left: 31.4vw;
+        left: 33.4vw;
         top: 0;
         font-size: 75px;
         letter-spacing: 5px;
+        transform: rotate(-90deg) translate(-18vw, -102vh);
+        -webkit-transform: rotate(-90deg) translate(-18vw, -102vh);
+        -moz-transform: rotate(-90deg) translate(-18vw, -102vh);
+        -ms-transform: rotate(-90deg) translate(-18vw, -102vh);
     }
     .layer {
         height: var(--dimention);
         width: var(--dimention);
     }
     .layer:nth-child(1) {
-        top: 17%;
+        top: 9%;
     }
     .layer:nth-child(2) {
-        top: -7%;
+        top: -18%;
     }
     .layer:nth-child(3) {
-        top: -30%;
+        top: -45%;
     }
     .content-padding {
         padding: 100px 0px 80px;
@@ -806,6 +822,7 @@ BANNER AREA
     .icon-right-arrow-next {
         float: right;
         line-height: 33px;
+        margin-left: 15px;
     }
     .service-circle {
         width: 90px !important;

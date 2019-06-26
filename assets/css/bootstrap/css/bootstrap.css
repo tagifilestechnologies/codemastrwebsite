@@ -4409,9 +4409,11 @@ input[type=submit].btn-block {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+    flex: 0;
     padding-left: 0;
     margin-bottom: 0;
-    list-style: none
+    list-style: none;
+    float: right;
 }
 
 .navbar-nav .nav-link {
@@ -4582,7 +4584,8 @@ input[type=submit].btn-block {
         display: -ms-flexbox!important;
         display: flex!important;
         -ms-flex-preferred-size: auto;
-        flex-basis: auto
+        flex-basis: auto;
+        float:;
     }
     .navbar-expand-lg .navbar-toggler {
         display: none
