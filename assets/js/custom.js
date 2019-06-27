@@ -16,6 +16,16 @@ $(document).ready(function() {
                 $(div).addClass('position-absolute trans-navigation');
             }
         });
+
+        function scrollWin(x, y) {
+            window.scrollBy(x, y);
+        }
+        $('#section-0').ready(function() {
+            if (window.scrollDown > 0) {
+                $('slide').scroll(slow);
+                $('slide').scrollWin(0, -50);
+            }
+        })
     });
 
 });
