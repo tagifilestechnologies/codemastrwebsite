@@ -589,10 +589,10 @@ BANNER AREA
     letter-spacing: 10px;
     text-transform: uppercase;
     font-family: var(--transform-font-family);
-    -webkit-transform: rotate(-90deg) translate(-20vw, -22.3vh);
-    -moz-transform: rotate(-90deg) translate(-20vw, -22.3vh);
-    -ms-transform: rotate(-90deg) translate(-20vw, -22.3vh);
-    transform: rotate(-90deg) translate(-20vw, -22.3vh);
+    -webkit-transform: rotate(-90deg) translate(-18vw, -25vh);
+    -moz-transform: rotate(-90deg) translate(-18vw, -25vh);
+    -ms-transform: rotate(-90deg) translate(-18vw, -25vh);
+    transform: rotate(-90deg) translate(-18vw, -25vh);
     color: var(--secodary-color);
     text-align: center;
 }
