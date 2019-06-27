@@ -167,6 +167,12 @@ h5.subtitle {
 
 /*---------- BUTTONS ----------*/
 
+.section {
+    background-attachment: fixed;
+    background-size: cover;
+    background-origin: padding-box;
+}
+
 .big-spacer {
     padding: 80px;
 }
@@ -785,10 +791,10 @@ BANNER AREA
         top: 0;
         font-size: 75px;
         letter-spacing: 5px;
-        transform: rotate(-90deg) translate(-18vw, -102vh);
-        -webkit-transform: rotate(-90deg) translate(-18vw, -102vh);
-        -moz-transform: rotate(-90deg) translate(-18vw, -102vh);
-        -ms-transform: rotate(-90deg) translate(-18vw, -102vh);
+        transform: rotate(-90deg) translate(-18vw, -97vh);
+        -webkit-transform: rotate(-90deg) translate(-18vw, -97vh);
+        -moz-transform: rotate(-90deg) translate(-18vw, -97vh);
+        -ms-transform: rotate(-90deg) translate(-18vw, -97vh);
     }
     .layer {
         height: var(--dimention);
