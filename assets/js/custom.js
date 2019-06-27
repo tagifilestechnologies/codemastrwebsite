@@ -10,10 +10,10 @@ $(document).ready(function() {
         $('nav#navbar').ready(function() {
             if (p > start) {
                 $(div).addClass('fixed-header slideInDown');
-                $(div).removeClass('position-absolute trans-navigation contact-btn');
+                $(div).removeClass('position-absolute trans-navigation');
             } else {
                 $(div).removeClass('fixed-header bounce slideInDown');
-                $(div).addClass('position-absolute trans-navigation contact-btn');
+                $(div).addClass('position-absolute trans-navigation');
             }
         });
     });
