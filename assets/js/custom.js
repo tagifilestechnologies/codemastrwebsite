@@ -16,17 +16,19 @@ $(document).ready(function() {
                 $(div).addClass('position-absolute trans-navigation');
             }
         });
+
+        function scrollWin(x, y) {
+            window.scrollBy(x, y);
+        }
+        
     });
-    afterSlideLoad: function(anchorLink, slide) {
-        if (anchorLink == "#section0" && slide == 1) {
-            $.fn.fullpage.setAllowScrolling(false, "up");
+
+    $('#section0').ready(function() {
+        if (window.scrollDown > 2) {
+            $('slide').scroll(slow);
+            $('slide').scrollWin(0, -150);
         }
-    }
-    onSlideLeave: function(anchorLink, slide) {
-        if (anchorLink == "#section0" && slide == 3) {
-            $.fn.fullpage.setAllowScrolling(true, "up");
-        }
-    }
+    })
 });
 
 // parrax elemtn statement position start here
