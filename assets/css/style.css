@@ -169,6 +169,12 @@ h5.subtitle {
 
 /*---------- BUTTONS ----------*/
 
+.section {
+    background-attachment: fixed;
+    background-size: cover;
+    background-origin: padding-box;
+}
+
 .big-spacer {
     padding: 80px;
 }
@@ -326,6 +332,7 @@ h5.subtitle {
     top: 40px;
     width: 32px;
     height: 32px;
+    cursor: pointer;
 }
 
 .secondary-btn {
@@ -763,6 +770,9 @@ BANNER AREA
         line-height: 75px;
         font-size: 48px;
         font-family: var(--bold-font-family);
+    }h3 {
+        font-size: 20px !important;
+        line-height: 50px !important;
     }
     .navbar-expand-lg.trans-navigation .navbar-nav .nav-link:last-child,
     .navbar-expand-lg.site-navigation .navbar-nav .nav-link:last-child {
@@ -787,10 +797,10 @@ BANNER AREA
         top: 0;
         font-size: 75px;
         letter-spacing: 5px;
-        transform: rotate(-90deg) translate(-18vw, -102vh);
-        -webkit-transform: rotate(-90deg) translate(-18vw, -102vh);
-        -moz-transform: rotate(-90deg) translate(-18vw, -102vh);
-        -ms-transform: rotate(-90deg) translate(-18vw, -102vh);
+        transform: rotate(-90deg) translate(-18vw, -97vh);
+        -webkit-transform: rotate(-90deg) translate(-18vw, -97vh);
+        -moz-transform: rotate(-90deg) translate(-18vw, -97vh);
+        -ms-transform: rotate(-90deg) translate(-18vw, -97vh);
     }
     .layer {
         height: var(--dimention);
@@ -863,6 +873,37 @@ BANNER AREA
     }
     .expertise-intro-section {
         padding-top: 55px;
+    }
+    .about-intro-detail p {
+        font-size: 85% !important;
+        line-height: 30px !important;
+    }
+    .about-intro-detail {
+        margin: 0px !important;
+    }
+    .about-img.mx-auto {
+        max-height: calc(100vh - 160px);
+        position: relative;
+        top: 5%;
+    }
+    .right-align-details p {
+        font-size: 83% !important;
+        line-height: 30px !important;
+    }.left-bottom-postion {
+        bottom: -15% !important;
+    }
+    /* Job desctiption Modal Css */
+    .descriptionContainer{
+        max-height: calc(100vh - 71px);
+        display: block;
+        position: relative;
+        overflow-y : auto;
+        overflow-x : hidden;
+        padding: 30px 15px;
+    }
+    .modal-close-btn {
+        right: 20px;
+        top: 15px;
     }
 }
 
@@ -1321,6 +1362,10 @@ span .primary {
     background-position: bottom center;
     top: -5%;
     right: 1%;
+    z-index: 0;
+}
+.let'sTalkbtn{
+    z-index: 10;
 }
 
 .text-alignment {
