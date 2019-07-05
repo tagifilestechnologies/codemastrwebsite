@@ -25,7 +25,7 @@ html.fp-enabled {
 }
 
 .fp-slide {
-    float: left
+    float: left;
 }
 
 .fp-slide,
@@ -39,8 +39,8 @@ html.fp-enabled {
     height: 100%;
     overflow: hidden;
     position: relative;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out
+    -webkit-transition: all .6s ease-out;
+    transition: all .6s ease-out
 }
 
 .fp-section.fp-table,
@@ -269,3 +269,16 @@ html.fp-enabled {
 
 
 /*# sourceMappingURL=fullpage.min.css.map */
+
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+    fp-slide .vertical>.slider {
+        -webkit-transition: -webkit-transform .6s ease-in-out;
+        -o-transition: -o-transform .6s ease-in-out;
+        transition: transform .6s ease-in-out;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-perspective: 1000;
+        perspective: 1000;
+    }
+}

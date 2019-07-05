@@ -44,7 +44,7 @@ body {
 
 p {
     line-height: 28px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 html {
@@ -61,9 +61,11 @@ body {
     margin: 0;
     padding: 0;
 }
-section{
+
+section {
     background-attachment: fixed;
 }
+
 h1,
 .h1,
 h2,
@@ -127,7 +129,7 @@ h2 {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 29px;
     line-height: 80px;
     font-weight: 100;
     font-family: var(--Medium-font-family);
@@ -253,6 +255,7 @@ h5.subtitle {
     -moz-box-shadow: 0px 83px 155px rgba(0, 0, 0, 0.06);
     -o-box-shadow: 0px 83px 155px rgba(0, 0, 0, 0.06);
     box-shadow: 0px 83px 155px rgba(0, 0, 0, 0.06);
+    z-index: 30;
 }
 
 .btn-white:focus {
@@ -391,7 +394,10 @@ h5.subtitle {
     border-radius: 0px 0px 0px 80px;
     z-index: -1;
 }
-
+map-bg-right{
+    position: relative;
+    width: 136%;
+}
 
 /*------------------------------------
 MENU NAVIGATION AREA
@@ -588,6 +594,7 @@ BANNER AREA
 
 .navbar-nav {
     max-width: 450px;
+    width: 100%;
 }
 
 .left-side-div-text h1 {
@@ -596,10 +603,10 @@ BANNER AREA
     letter-spacing: 10px;
     text-transform: uppercase;
     font-family: var(--transform-font-family);
-    -webkit-transform: rotate(-90deg) translate(-18vw, -25vh);
-    -moz-transform: rotate(-90deg) translate(-18vw, -25vh);
-    -ms-transform: rotate(-90deg) translate(-18vw, -25vh);
-    transform: rotate(-90deg) translate(-18vw, -25vh);
+    -webkit-transform: rotate(-90deg) translate(-20vw, -22.2vh);
+    -moz-transform: rotate(-90deg) translate(-20vw, -22.2vh);
+    -ms-transform: rotate(-90deg) translate(-20vw, -22.2vh);
+    transform: rotate(-90deg) translate(-20vw, -22.2vh);
     color: var(--secodary-color);
     text-align: center;
 }
@@ -752,7 +759,13 @@ BANNER AREA
         --dimention: 10vw;
     }
     .navbar-nav {
-        max-width: 554px;
+        max-width: 407px;
+    }
+    .fixed-header .navbar-nav .nav-link:last-child,
+    .fixed-header .navbar-nav .nav-link:last-child {
+        padding: 0px 12px;
+        font-size: 0.97vw;
+        line-height: 4;
     }
     .container {
         max-width: 80vw !important;
@@ -763,28 +776,34 @@ BANNER AREA
     }
     .navbar-expand-lg.trans-navigation .navbar-nav .nav-link:last-child,
     .navbar-expand-lg.site-navigation .navbar-nav .nav-link:last-child {
-        padding: 10px 20px;
+        padding: 10px 15px;
     }
     h1 {
-        font-weight: 700;
-        line-height: 75px;
-        font-size: 48px;
-        font-family: var(--bold-font-family);
-    }h3 {
+        font-weight: 700 !important;
+        line-height: 75px !important;
+        font-size: 48px !important;
+        font-family: var(--bold-font-family) !important;
+    }
+    h3 {
         font-size: 20px !important;
         line-height: 50px !important;
     }
     .navbar-expand-lg.trans-navigation .navbar-nav .nav-link:last-child,
     .navbar-expand-lg.site-navigation .navbar-nav .nav-link:last-child {
-        font-size: 16px;
+        font-size: 0.87vw;
     }
     img.img-fluid.b-logo {
         max-width: 60px !important;
         height: 60px !important;
     }
     .banner-content .banner-title {
-        line-height: 71px;
-        font-size: 4vw;
+        line-height: 55px;
+        font-size: 3vw;
+        margin-top: 32px;
+    }
+    .banner-content p {
+        font-size: 15px;
+        line-height: 32px;
     }
     .img-wrapper {
         height: 65vh !important;
@@ -795,12 +814,12 @@ BANNER AREA
     .left-side-div-text h1 {
         left: 33.4vw;
         top: 0;
-        font-size: 75px;
+        font-size: 68px;
         letter-spacing: 5px;
-        transform: rotate(-90deg) translate(-18vw, -97vh);
-        -webkit-transform: rotate(-90deg) translate(-18vw, -97vh);
-        -moz-transform: rotate(-90deg) translate(-18vw, -97vh);
-        -ms-transform: rotate(-90deg) translate(-18vw, -97vh);
+        transform: rotate(-90deg) translate(-18vw, -109vh);
+        -webkit-transform: rotate(-90deg) translate(-18vw, -109vh);
+        -moz-transform: rotate(-90deg) translate(-18vw, -109vh);
+        -ms-transform: rotate(-90deg) translate(-18vw, -109vh);
     }
     .layer {
         height: var(--dimention);
@@ -821,15 +840,18 @@ BANNER AREA
     .hero-intro {
         margin-top: 10px;
         margin-bottom: 10px;
+        margin-right: 66px;
     }
     .btn {
         padding: 10px 18px;
         height: 54px;
+        position: relative;
         line-height: 35px;
         max-width: 210px;
         font-size: 17px;
         text-align: left;
         font-weight: 600;
+        z-index: 30;
     }
     .icon-right-arrow-next {
         float: right;
@@ -837,8 +859,8 @@ BANNER AREA
         margin-left: 15px;
     }
     .service-circle {
-        width: 90px !important;
-        height: 90px !important;
+        width: 48px !important;
+        height: 48px !important;
     }
     .service-intro .service-icon {
         left: 22% !important;
@@ -855,6 +877,15 @@ BANNER AREA
         max-width: 350px !important;
         display: flex;
         justify-content: center;
+    }
+    .workflow-block {
+        display: block;
+        margin: 0 auto;
+    }
+    .workflow-block .work-flow-img {
+        margin: 0 auto;
+        display: flex;
+        max-height: calc(100vh - 250px);
     }
     .Project-work-circle-3 {
         top: 32.6%;
@@ -889,16 +920,17 @@ BANNER AREA
     .right-align-details p {
         font-size: 83% !important;
         line-height: 30px !important;
-    }.left-bottom-postion {
+    }
+    .left-bottom-postion {
         bottom: -15% !important;
     }
     /* Job desctiption Modal Css */
-    .descriptionContainer{
+    .descriptionContainer {
         max-height: calc(100vh - 71px);
         display: block;
         position: relative;
-        overflow-y : auto;
-        overflow-x : hidden;
+        overflow-y: auto;
+        overflow-x: hidden;
         padding: 30px 15px;
     }
     .modal-close-btn {
@@ -1005,13 +1037,13 @@ BANNER AREA
     /* common style */
     h1 {
         font-weight: 700;
-        line-height: 75px;
-        font-size: 48px;
+        line-height: 54px;
+        font-size: 34px;
         font-family: var(--bold-font-family);
     }
     h4 {
-        font-size: 25px;
-        line-height: 70px;
+        font-size: 18px;
+        line-height: 34px;
         font-family: var(--Medium-font-family);
     }
     /* banner inro section */
@@ -1023,6 +1055,10 @@ BANNER AREA
         max-width: 460px;
         top: -15%;
         left: 12%;
+    }
+    .service-intro p {
+        font-size: 13px !important;
+        line-height: 26px !important;
     }
 }
 
@@ -1236,9 +1272,10 @@ EXPERTISE AREA
 .expertise-box {
     background-color: #fff;
     max-width: 180px;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 80%;
+    background-size: cover;
 }
 
 .expertise-grid {
@@ -1254,7 +1291,7 @@ EXPERTISE AREA
 .expertise-box img {
     display: block;
     margin: 0% auto;
-    padding: 40% 0%;
+    padding: 47% 0%;
 }
 
 .expertise-intro-detail-box p {
@@ -1305,6 +1342,7 @@ span .primary {
     color: var(--black-color);
     font-size: 17px;
     line-height: 50px;
+    float: left;
 }
 
 ::after,
@@ -1321,9 +1359,10 @@ span .primary {
 }
 
 .footer-links {
-    display: block;
+    /* display: block; */
     font-size: 17px;
-    line-height: 50px;
+    line-height: 70px;
+    column-count: 4;
     font-family: poppins-regular, sans-serif;
     cursor: pointer;
     color: var(--black-color);
@@ -1351,54 +1390,49 @@ span .primary {
     background-attachment: scroll;
     background-size: cover;
     background-position: bottom center;
-    top: -25%;
-    right: -2%;
+    top: -45%;
+    right: -14%;
+    user-select: none;
+    z-index: 0;
 }
 
 .lets-talk-right-banner-bg-2 {
-    position: absolute;
-    background-attachment: scroll;
-    background-size: cover;
+    position: fixed;
+    background-attachment: fixed;
+    background-size: contain;
     background-position: bottom center;
-    top: -5%;
-    right: 1%;
+    top: -18%;
+    right: -3%;
     z-index: 0;
 }
-.let'sTalkbtn{
-    z-index: 10;
-}
 
+.letsTalkbtn{
+ z-index: 10;
+}
 .text-alignment {
     padding-left: 20%;
 }
-
 .right-bottom-position {
-    bottom: -14%;
+    bottom: -26%;
 }
-
 .left-bottom-postion {
     bottom: -28%;
 }
-
 .footer-copyright {
     font-size: 17px;
     line-height: 42px;
     color: var(--black-color);
 }
 
-
 /* ------------------------------------
 Contact Modal Area Start Here
 --------------------------------------*/
-
 .min-container {
     padding-left: 50px;
 }
-
 .contact-icon {
     display: block;
 }
-
 .contact-icon i {
     font-size: 24px;
     display: block;
@@ -1408,16 +1442,13 @@ Contact Modal Area Start Here
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .Contact-btn {
     visibility: hidden;
 }
-
 .map-box {
     border: 0;
     top: 0;
-    left: -2%;
     width: 100%;
     height: calc(100vh);
-    position: relative;
+    position: absolute;
 }
