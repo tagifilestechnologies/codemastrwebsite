@@ -15,7 +15,7 @@ new fullpage("#fullpage", {
 // with screen resolution append height auto adjust on sliders inside slider
 $(document).ready(function() {
   var carosulDiv = $('div[data-fp-style="fp-section"]');
-  if (window.screen.availWidth < 991) {
+  if (window.screen.availWidth < 992) {
     $(carosulDiv).addClass("fp-auto-height");
   }
 });

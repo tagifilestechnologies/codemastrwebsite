@@ -169,7 +169,10 @@ select {
 }
 
 
-
+.carousel-control-prev {
+    left: 0;
+    display: none;
+}
 /* navbar css start here  */
 header {
     display: flex;
@@ -222,10 +225,11 @@ aside#mainNav {
     position: fixed;
     width: 100%;
     background: var(--white);
-    height: 100%;
+    height: auto;
     top: 70px;
     z-index: 999;
     color: var(--black-color);
+    overflow: scroll;
 }
 
 aside#mainNav .nav-item .nav-link {
@@ -437,7 +441,34 @@ aside#mainNav .nav-item .nav-link {
         transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(-1em);
     }
 }
-@media screen and (min-width: 481px) and (max-width: 768px)and (min-height: 568px) and (max-height: 1080px){
+
+@media screen and (width: 384px) and (height: 640px) {
+    .banner-title {
+        font-size: 1.5em !important;
+    }
+
+    .overlay.dark-overlay {
+        height: calc(100% - 71px) !important;
+    }
+
+    .layer:nth-child(1) {
+        top: 25% !important;
+        left: 40% !important;
+    }
+
+    .layer:nth-child(2) {
+        top: 43.4% !important;
+        left: 40% !important;
+    }
+
+    .layer:nth-child(3) {
+        top: 46% !important;
+        left: 40% !important;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-height: 768px) and (max-height: 1080px) {
+
     .navbar-brand:focus,
     .navbar-brand:hover {
         text-decoration: none;
@@ -450,16 +481,18 @@ aside#mainNav .nav-item .nav-link {
         border-radius: 36px 0 0;
         margin-left: 5%;
     }
+
     .overlay.dark-overlay {
         display: flex;
         width: 95%;
         background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--secodary-color) 100%);
         height: calc(100% - 71px);
         top: 71px;
-        border-radius: 0px 0px 0px 80px;
+        border-radius: 80px 0px 0px 80px;
         z-index: 0;
         left: 5%;
     }
+
     .design {
         transform: rotate(-90deg);
         font-size: 40px;
@@ -494,6 +527,7 @@ aside#mainNav .nav-item .nav-link {
         margin-top: 20px;
         margin-bottom: 20px;
         height: 30vh;
+        align-items: stretch;
     }
 
     .hero-intro p {
@@ -501,6 +535,10 @@ aside#mainNav .nav-item .nav-link {
         font-family: var(--regular-font-family);
         line-height: 2;
         color: var(--light-gray);
+    }
+
+    .banner-title {
+        font-size: 2.3em;
     }
 
     .banner-area .content-padding {
@@ -542,6 +580,67 @@ aside#mainNav .nav-item .nav-link {
         left: 35%;
     }
 }
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .overlay.dark-overlay {
+        width: 95%;
+        left: 5%;
+        top: 71px;
+        border-radius: 80px 0px 0px 80px;
+        height: calc(100% - 71px);
+    }
+
+    .img-wrapper {
+        height: 45.11vh;
+        max-width: 58.98vw;
+    }
+
+    .layer {
+        width: 13em;
+        height: 13em;
+    }
+
+    .banner-area .content-padding {
+        align-items: flex-end;
+    }
+
+    .design {
+        left: -19%;
+        color: var(--white);
+    }
+
+    .develop {
+        left: -27%;
+        color: var(--white);
+    }
+
+    .market {
+        left: -22%;
+        color: var(--white);
+    }
+
+    .hero-intro {
+        height: 18vh;
+    }
+}
+
+@media screen and (width: 800px) and (height: 1280px) {
+    .intro {
+        height: 59vh !important;
+    }
+
+    .banner-title {
+        display: flex !important;
+        align-items: flex-start !important;
+        width: 100% !important;
+    }
+
+    .layer:nth-child(3) {
+        top: 39% !important;
+        left: 32% !important;
+    }
+}
+
 @media screen and (min-width: 480px) and (max-width: 991px) {
     .for-mobile {
         display: none;
@@ -555,6 +654,25 @@ aside#mainNav .nav-item .nav-link {
 @media screen and (min-width: 992px) {
     .hidden {
         display: none !important;
+    }
+}
+
+@media only screen and (width: 360px) and (min-height: 480px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .overlay.dark-overlay {
+        height: calc(100% - 71px) !important;
+    }
+
+    .img-wrapper {
+        height: 14.6em !important;
+        max-width: 180px !important;
+    }
+
+    .hero-intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly !important;
+        align-items: stretch !important;
+        height: 24vh !important;
     }
 }
 
@@ -702,15 +820,35 @@ aside#mainNav .nav-item .nav-link {
     }
 }
 
+@media screen and (width: 375px) and (height: 812px) and (-webkit-max-device-pixel-ratio: 3.5) {
+    .banner-title {
+        font-size: 1.5em !important;
+        display: flex;
+        align-items: flex-start !important;
+        width: 100%;
+    }
+
+    .hero-intro {
+        height: 37vh !important;
+        justify-content: stretch !important;
+    }
+
+    .banner-content {
+        align-items: flex-end !important;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
+    .banner-area .content-padding {
+        padding-left: 10%;
+        align-items: flex-end;
+    }
 
     .section {
         padding: 0% 0%;
     }
 
-    .navbar-brand:focus,
-    .navbar-brand:hover {
-        text-decoration: none;
+    .navbar-brand {
         margin-left: 15px;
     }
 
@@ -739,6 +877,9 @@ aside#mainNav .nav-item .nav-link {
         font-weight: 900;
         font-family: var(--regular-font-family);
         color: var(--white);
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
     }
 
     .overlay.dark-overlay {
@@ -767,7 +908,7 @@ aside#mainNav .nav-item .nav-link {
         height: 258px;
         max-width: 200px;
         border-radius: 60px 0 0;
-        margin-left: 15%;
+        margin-left: 0%;
         background: var(--white-color);
         -webkit-box-shadow: 0 83px 155px rgba(0, 0, 0, 0.06);
         -moz-box-shadow: 0 83px 155px rgba(0, 0, 0, 0.06);
@@ -786,7 +927,7 @@ aside#mainNav .nav-item .nav-link {
         font-family: var(--transform-font-family);
         letter-spacing: 6px;
         position: absolute;
-        left: -15px;
+        left: -30px;
         color: var(--white);
     }
 
@@ -797,7 +938,7 @@ aside#mainNav .nav-item .nav-link {
         font-family: var(--transform-font-family);
         letter-spacing: 6px;
         position: absolute;
-        left: -30px;
+        left: -45px;
         color: var(--white);
     }
 
@@ -808,7 +949,7 @@ aside#mainNav .nav-item .nav-link {
         font-family: var(--transform-font-family);
         letter-spacing: 6px;
         position: absolute;
-        left: -15px;
+        left: -35px;
         color: var(--white);
     }
 
@@ -835,9 +976,10 @@ aside#mainNav .nav-item .nav-link {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         font-size: 11px;
         font-family: Poppins;
+        height: 20vh;
     }
 
     .hero-intro p {
@@ -845,6 +987,7 @@ aside#mainNav .nav-item .nav-link {
         color: var(--light-gray);
         font-weight: thin;
         line-height: 1.5;
+        font-size: 100%;
     }
 
     .banner-content a.btn {
@@ -858,6 +1001,8 @@ aside#mainNav .nav-item .nav-link {
         font-family: var(--regular-font-family);
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1080px) {}
 
 /* Services Section css start here  */
 .service-intro {
@@ -902,6 +1047,37 @@ aside#mainNav .nav-item .nav-link {
     margin-bottom: 30px;
 }
 
+@media screen and (width: 384px) and (height: 640px) {
+    .service-intro p {
+        margin-bottom: 5px !important;
+    }
+
+    .Service-title {
+        margin-top: 71px !important;
+    }
+}
+
+@media screen and (width: 360px) and (min-height: 480px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .Service-title {
+        font-size: 20px;
+        font-weight: 900;
+        margin-top: 34px;
+    }
+
+    .service-circle {
+        display: block !important;
+    }
+
+    .service-intro p {
+        margin-bottom: 0 !important;
+    }
+
+    .service-circle img {
+        width: 36px;
+        height: 36px;
+    }
+}
+
 @media screen and (width:360px) and (height: 720px) {
     .service-intro {
         margin-top: 10px !important;
@@ -944,8 +1120,9 @@ aside#mainNav .nav-item .nav-link {
     }
 
     .Service-title {
-        font-size: 20px;
+        font-size: 1.5em;
         font-weight: 900;
+        margin-top: 20px;
     }
 
     .service-head {
@@ -982,8 +1159,17 @@ aside#mainNav .nav-item .nav-link {
 
     .service-intro p {
         font-size: 11px;
+        margin: 0;
     }
 }
+
+@media screen and (width: 800px) and (height: 1280px) {
+    .service-intro p {
+        font-size: 100% !important;
+    }
+}
+
+
 
 /* about section css start here */
 .bg-light-gray {
@@ -1010,9 +1196,11 @@ aside#mainNav .nav-item .nav-link {
     color: var(--gray);
     padding: 10px 0px;
 }
+
 .about-img {
     width: 80%;
 }
+
 .contact-btn {
     background: var(--white);
     font-size: 100%;
@@ -1028,6 +1216,25 @@ aside#mainNav .nav-item .nav-link {
     line-height: 1;
     padding: 16px 20px;
     width: 100%;
+}
+
+@media screen and (width: 800px) and (height: 1280px) {
+    .about-img {
+        width: 63% !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+
+    .about-intro-detail p {
+        font-size: 100% !important;
+    }
+}
+
+@media screen and (width: 384px) and (height: 640px) {
+    .about-img {
+        width: 40% !important;
+        margin-top: 71px !important;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -1116,6 +1323,32 @@ aside#mainNav .nav-item .nav-link {
 .right-align-details p {
     font-size: 80%;
     font-weight: normal;
+}
+
+@media screen and (min-height: 800px) and (max-height: 970px) {
+    .workflow-heading {
+        height: 12vh !important;
+    }
+}
+
+@media screen and (width: 800px) and (height: 1280px) {
+    .workflow-heading {
+        font-size: 42px !important;
+        margin-top: 50% !important;
+    }
+
+    .right-align-details {
+        height: 12vh !important;
+        align-items: center !important;
+    }
+
+    .right-align-details h3 {
+        font-size: 30px !important;
+    }
+
+    .right-align-details p {
+        font-size: 100% !important;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -1257,26 +1490,39 @@ aside#mainNav .nav-item .nav-link {
 
 .expertise-grid-1 {
     left: 38%;
-    top: -19%;
+    top: -3.9rem;
 }
 
 .expertise-grid-2 {
     right: 56%;
-    bottom: -19%;
+    bottom: -3rem;
 }
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .expertise-intro-detail-box p {
-        font-size: 11px;
-        font-family: var(--regular-font-family);
+@media screen and (width: 375px) and (height: 812px) {
+    .expertise-intro-section {
+        height: 50vh !important;
+    }
+    .expertise-col:nth-child(1) {
+        transform: translate(0%, 0%) !important;
+        -webkit-transform: translate(0%, 0%) !important;
+        -moz-transform: translate(0%, 0%) !important;
+        -ms-transform: translate(0%, 0%) !important;
     }
     .expertise-intro-section h1 {
-        font-size: 20px;
-        font-weight: 900;
-        font-family: var(--bold-font-family);
+        font-size: 1.7em !important;
     }
-    .expertise-box{
-        float: left;
+    .expertise-intro-detail-box {
+        height: 34vh !important;
+    }
+    .expertise-col {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: 20vh !important;
+    }
+
+    .expertise-box {
         width: 37%;
         height: 19vh;
         padding: 20% 8%;
@@ -1284,18 +1530,127 @@ aside#mainNav .nav-item .nav-link {
     }
     
 }
+@media screen and (min-width: 320px) and (max-width: 480px) and (max-height: 768px) {
+    .navbar-toggler {
+        font-size: 0.95rem;
+    }
 
-@media screen and (width: 360px) and (height: 640) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-max-device-pixel-ratio: 3){
+    .fixed-header {
+        top: -2px;
+    }
+
+    .expertise-intro-detail-box {
+        height: 34vh;
+    }
+
+    .expertise-intro-detail-box p {
+        font-size: 80%;
+        font-family: var(--regular-font-family);
+    }
+
+    .expertise-intro-section {
+        height: auto;
+    }
+
+    .expertise-intro-section h1 {
+        font-size: 1.7em;
+        font-weight: 900;
+        font-family: var(--bold-font-family);
+        margin-top: 61px;
+    }
+
+    .expertise-col {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: 24vh;
+    }
+
+    .expertise-box {
+        width: 37%;
+        height: 19vh;
+        padding: 20% 8%;
+        margin: 2% 2%;
+    }
+
+}
+
+@media screen and (width: 800px) and (height: 1280px) {
+    .expertise-intro-section {
+        margin-top: 28% !important;
+    }
+
+    .expertise-intro-detail-box {
+        height: 20vh !important;
+    }
+
+    .expertise-intro-detail-box p {
+        font-size: 100% !important;
+    }
+}
+
+@media screen and (min-height: 800px) and (max-height: 970px) {
+    .expertise-intro-detail-box {
+        height: 44vh;
+    }
+
+    .expertise-col {
+        height: 46vh ;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .expertise-col {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: 19vh;
+    }
+
+    .expertise-box {
+        width: 30%;
+        height: 17vh;
+        padding: 8%;
+        margin: 2% 2%;
+    }
+
+    .expertise-intro-section {
+        height: auto;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (width: 384px) and (height: 640px) {
+    .expertise-intro-section h1 {
+        margin-top: 71px !important;
+    }
+
+    .expertise-col {
+        height: 25vh !important;
+    }
+
+    .expertise-intro-detail-box {
+        height: 30vh !important;
+    }
+}
+
+@media screen and (width: 360px) and (height: 640px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-max-device-pixel-ratio: 3) {
     .expertise-intro-detail-box p {
         font-size: 11px;
         font-family: var(--regular-font-family);
     }
+
     .expertise-intro-section h1 {
         font-size: 20px;
         font-weight: 900;
         font-family: var(--bold-font-family);
     }
-    .expertise-box{
+
+    .expertise-box {
         float: left;
         width: 37%;
         height: 19vh;
@@ -1303,20 +1658,28 @@ aside#mainNav .nav-item .nav-link {
         margin: 2% 2%;
     }
 }
-@media screen and (max-width: 1024px){
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .expertise-box {
         width: 150px;
         height: 150px;
+        float: left;
+        padding: 0;
+        margin-left: 5%;
+        margin-bottom: 4%;
     }
+
     .expertise-content-section {
         height: auto;
     }
+
     .expertise-intro-section {
         margin-top: 80px;
         margin-bottom: 20px;
         height: auto;
     }
 }
+
 /* footer section css start here  */
 
 .footer-banner {
@@ -1333,10 +1696,10 @@ aside#mainNav .nav-item .nav-link {
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom center;
-    top: 17em;
-    left: 23em;
-    width: 512px;
-    height: 512px;
+    top: 23%;
+    left: 17.9%;
+    width: 27.2vw;
+    height: 52.7vh;
     border-radius: 50%;
 }
 
@@ -1345,10 +1708,10 @@ aside#mainNav .nav-item .nav-link {
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom center;
-    top: 19.8em;
-    left: 28.6em;
-    width: 311px;
-    height: 311px;
+    top: 29%;
+    left: 22.5%;
+    width: 18.7vw;
+    height: 36.2vh;
 }
 
 .lets-talk-right-banner-bg {
@@ -1416,26 +1779,31 @@ aside#mainNav .nav-item .nav-link {
     transition: all ease-in-out 0.6s;
 }
 
-.quick-links li:hover a , .quick-links li a:hover{
+.quick-links li:hover a,
+.quick-links li a:hover {
     color: var(--primary-color);
     font-size: 100%;
     text-decoration: none;
     transition: all ease-in-out 0.6s;
 }
+
 .footer-copyright {
     line-height: 4.5;
 }
+
 @keyframes moveSlide {
-    from{
+    from {
         width: 1%;
     }
-    to{
+
+    to {
         width: 62%;
     }
 }
 
 
-.quick-links li a:hover, .quick-links li:hover a::after{
+.quick-links li a:hover,
+.quick-links li:hover a::after {
     content: '';
     font-size: 100%;
     color: var(--primary-color);
@@ -1448,9 +1816,43 @@ aside#mainNav .nav-item .nav-link {
     transition: moveSlide 0.6s ease-in-out;
 }
 
+@media screen and (width: 360px) and (height: 640px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .lets-talk-banner-bg-2 {
+        top: 3.1em !important;
+        left: 15em !important;
+    }
+
+    .lets-talk-right-banner-bg {
+        top: 12.6em !important;
+        right: 13.7em !important;
+    }
+
+    .lets-talk-right-banner-bg-2 {
+        top: 13.9em !important;
+        right: 14.9em !important;
+    }
+
+    .footer-description {
+        line-height: 1.5 !important;
+    }
+
+    .footer-copyright {
+        line-height: 2 !important;
+    }
+}
+
 @media screen and (min-width: 481px) and (max-width: 767px)and (min-height: 568px) and (max-height: 1080px) {
     .footer-banner {
-        height: 260px;
+        height: 35vh;
+    }
+
+    .footer-logo {
+        height: 150px;
+    }
+
+    .footer-heading {
+        text-align: center;
+        font-size: 40px;
     }
 
     .lets-talk-banner-bg {
@@ -1483,6 +1885,166 @@ aside#mainNav .nav-item .nav-link {
         width: 133px;
         height: 133px;
     }
+
+    .footer-description {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .footer-copyright {
+        line-height: 2.2;
+    }
+
+}
+
+@media screen and (min-width: 1520px) and (max-width: 1760px) {
+    .lets-talk-right-banner-bg {
+        top: -13.9%;
+        right: 10.7%;
+    }
+
+    .lets-talk-right-banner-bg-2 {
+        top: 8%;
+        right: 17%;
+    }
+
+    .lets-talk-banner-bg {
+        top: 22%;
+        left: 9.9%;
+    }
+
+    .lets-talk-banner-bg-2 {
+        top: 30%;
+        left: 13.5%;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-height: 900px) {
+    .lets-talk-right-banner-bg {
+        top: -8.9% !important;
+        right: 1.7% !important;
+    }
+
+    .lets-talk-right-banner-bg-2 {
+        top: 8% !important;
+        right: 11% !important;
+    }
+
+    .lets-talk-banner-bg {
+        top: 21% !important;
+        left: 2.9% !important;
+    }
+
+    .lets-talk-banner-bg-2 {
+        top: 30% !important;
+        left: 6.5% !important;
+    }
+}
+
+@media only screen and (width: 1280px) and (height: 800px) {
+    .lets-talk-banner-bg {
+        top: 19% !important;
+        left: -1.1% !important;
+    }
+
+    .lets-talk-banner-bg-2 {
+        top: 30% !important;
+        left: 1.5% !important;
+    }
+
+    .lets-talk-right-banner-bg {
+        top: -10.9% !important;
+        right: -3.3% !important;
+    }
+
+    .lets-talk-right-banner-bg-2 {
+        top: 8% !important;
+        right: 5% !important;
+    }
+}
+
+@media screen and (width: 800px) and (height: 1280px) {
+    .footer-heading {
+        font-size: 3.3em !important;
+        text-align: center !important;
+    }
+
+    .letsTalkbtn {
+        margin: 3% auto !important;
+    }
+
+    .lets-talk-banner-bg {
+        top: 48% !important;
+        left: -1.1% !important;
+        width: 35.7vw !important;
+        height: 22.3vh !important;
+    }
+
+    .lets-talk-banner-bg-2 {
+        top: 51% !important;
+        left: 3.5% !important;
+        width: 26.3vw !important;
+        height: 16.4vh !important;
+    }
+
+    .lets-talk-right-banner-bg {
+        top: 16.1% !important;
+        right: 3.7% !important;
+        width: 35.7vw !important;
+        height: 22.3vh !important;
+    }
+
+    .lets-talk-right-banner-bg-2 {
+        top: 23% !important;
+        right: 5% !important;
+        width: 26.3vw !important;
+        height: 16.4vh !important;
+    }
+
+    .footer-logo {
+        margin: 10% auto !important;
+        height: 60px !important;
+    }
+
+    .footer-description {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+
+    .footer-copyright {
+        line-height: 4.5 !important;
+        font-size: 100% !important;
+    }
+}
+
+@media screen and (width: 384px) and (height: 640px) {
+    .footer-heading {
+        font-size: 1.8em !important;
+    }
+
+    .lets-talk-right-banner-bg-2 {
+        top: 14.9em !important;
+        right: 14.9em !important;
+    }
+
+    .footer-copyright {
+        line-height: 1.5 !important;
+    }
+
+    .lets-talk-banner-bg {
+        top: 4em !important;
+        left: 16.3em !important;
+    }
+
+    .lets-talk-banner-bg-2 {
+        top: 6.2em !important;
+        left: 17em !important;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -1491,22 +2053,22 @@ aside#mainNav .nav-item .nav-link {
     }
 
     .lets-talk-banner-bg {
-        top: 7.4em;
-        left: 13.3em;
+        top: 2.4em;
+    left: 15.3em;
         width: 135px;
         height: 135px;
         border-radius: 50%;
     }
 
     .lets-talk-banner-bg-2 {
-        top: 9.2em;
-        left: 15em;
+        top: 5.2em;
+        left: 16em;
         width: 113px;
         height: 113px;
     }
 
     .lets-talk-right-banner-bg {
-        top: 20.6em;
+        top: 14.6em;
         right: 14.7em;
         z-index: 0;
         width: 169px;
@@ -1514,23 +2076,26 @@ aside#mainNav .nav-item .nav-link {
     }
 
     .lets-talk-right-banner-bg-2 {
-        top: 21.9em;
+        top: 15.9em;
         right: 15.9em;
         z-index: 0;
         width: 133px;
         height: 133px;
     }
+
     .footer-heading {
-        font-size: 20px;
+        font-size: 1.7em;
         text-align: center;
     }
-    .footer-description{
+
+    .footer-description {
         display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    line-height: 2.5;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        line-height: 2.5;
     }
+
     .footer-logo {
         display: flex;
         flex-direction: row;
@@ -1539,6 +2104,7 @@ aside#mainNav .nav-item .nav-link {
         width: 60%;
         margin: 7% auto;
     }
+
     .letsTalkbtn {
         width: 150px;
         display: flex;
