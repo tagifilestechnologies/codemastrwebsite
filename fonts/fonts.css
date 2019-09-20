@@ -5,7 +5,7 @@
 }
 
 @font-face {
-    font-family:"poppins";
+    font-family:"poppins-regular";
     src:url("poppins-regular.woff2") format("woff2"),
     url("poppins-regular.woff") format("woff"),
     url("poppins-regular.ttf") format("opentype");
@@ -28,8 +28,19 @@
     font-style:normal;font-weight:700;
 }
 
+
 @font-face {
-    font-family:"bauerbodoni-std";
-    src:url("Bauer-Bodoni-Std.ttf") format("opentype");
-    font-style:normal;font-weight:700;
+    font-family: "bauerbodoni-std";
+    src: url("Bauer-Bodoni-Std.ttf") format("opentype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "icomoon";
+    src: url("icomoon.ttf") format("opentype"),
+    url("ico-moon.woff") format("woff"),
+    url("ico-moon.svg") format("svg");
+    font-style: normal;
+    font-weight: 700;
 }

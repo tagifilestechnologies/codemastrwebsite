@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?ipkvum');
+    src: url('../fonts/icomoon.eot?ipkvum#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?ipkvum') format('truetype'), url('../fonts/icomoon.woff?ipkvum') format('woff'), url('../fonts/icomoon.svg?ipkvum#icomoon') format('svg');
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Bonus:before {
+    content: "\e900";
+}
+
+.icon-Flexi_schedule:before {
+    content: "\e901";
+}
+
+.icon-Great_team:before {
+    content: "\e902";
+}
+
+.icon-Setup:before {
+    content: "\e903";
+}
+
+.icon-Vacation:before {
+    content: "\e904";
+}
+
+.icon-World-class_Projects:before {
+    content: "\e905";
+}
+
+.icon-androidios:before {
+    content: "\e906";
+}
+
+.icon-cloud-services:before {
+    content: "\e907";
+}
+
+.icon-sass:before {
+    content: "\e908";
+}
+
+.icon-web-applications:before {
+    content: "\e909";
+}
+
+.icon-web-design:before {
+    content: "\e90a";
+}
+
+.icon-arrow-circle:before {
+    content: "\e90b";
+    color: #c5c5c5;
+}
+
+.icon-close:before {
+    content: "\e90c";
+}
+
+.icon-close-filled:before {
+    content: "\e90d";
+}
+
+.icon-down-arrow:before {
+    content: "\e90e";
+}
+
+.icon-email:before {
+    content: "\e90f";
+}
+
+.icon-left-arrow:before {
+    content: "\e910";
+}
+
+.icon-live-support:before {
+    content: "\e911";
+}
+
+.icon-location:before {
+    content: "\e912";
+}
+
+.icon-masterpiece:before {
+    content: "\e913";
+}
+
+.icon-meet:before {
+    content: "\e914";
+}
+
+.icon-new-idea:before {
+    content: "\e915";
+}
+
+.icon-phone:before {
+    content: "\e916";
+}
+
+.icon-right-arrow:before {
+    content: "\e917";
+}
+
+.icon-right-arrow-next:before {
+    content: "\e918";
+}
+
+.icon-square-dots:before {
+    content: "\e919";
+}
+
+.icon-time:before {
+    content: "\e91a";
+}
+
+.icon-up-arrow:before {
+    content: "\e91b";
+}
