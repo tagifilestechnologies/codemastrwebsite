@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CodeMastr | HOME</title>
+    <link rel="stylesheet" href="./CSS/font-awsome.css">
     <link rel="stylesheet" href="./CSS/icofont.css" />
     <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
-    <link rel="stylesheet" href="CSS/fullpage.css" />
-    <link rel="stylesheet" href="CSS/foundation.css" />
+    <link rel="stylesheet" href="./CSS/fullpage.css" />
+    <link rel="stylesheet" href="./CSS/foundation.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body data-spy="scroll" data-target=".navbar" class="scroller">
@@ -19,7 +20,7 @@
         class="navbar navbar-expand-lg p-0 position-absolute w-100 trans-navigation"
       >
         <div class="container">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="./index.html">
             <img
               src="./Images/cm-logo.svg"
               alt="Logo"
@@ -909,18 +910,20 @@
               height="20"
               class="model-x modal-close-btn"
             />
-            <div class="container">
+            <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-6 shadow-lg@">
+                <div class="col-lg-6 shadow-lg p-0">
                   <div class="container min-container">
                     <img
-                      src="./Images/logo-codemastr.svg"
+                      src="./Images/cm-logo.svg"
                       width="90"
                       height="70"
                     />
 
-                    <div class="container">
-                      <h5 class="mt-5">Request a Callback</h5>
+                    <div class="container p-0">
+                      <div class="contact-form-wrapper">
+                      <h5 class="contact-header">Request a Callback</h5>
+                      <div class="form-fields">
                       <div class="form-group">
                         <input
                           type="text"
@@ -939,15 +942,12 @@
                           placeholder="PHONE (add extension)"
                         />
                       </div>
-                      <select class="form-control career-home-dropdown mt-3">
-                        <option>I HAVE AN INTERESTING PROJECT</option>
-                        <option>YES</option>
-                        <option>NO</option>
-                      </select>
-                      <div class="mt-4">
+                        <textarea type="text" class="form-control" rows="5" cols="100" placeholder="Description"></textarea>
+                      </div>
+                      <div class="contact-form-submit">
                         <button
                           type="button"
-                          class="btn secondary-btn btn-sm align-middle btn-circled contact-btn"
+                          class="btn secondary-btn btn-sm align-middle btn-circled contact-form-btn"
                         >
                           SEND <span class="icon-right-arrow-next"></span>
                         </button>
@@ -955,51 +955,52 @@
                           >We promise to contact you in next 48 hours.</span
                         >
                       </div>
-
-                      <div class="big-spacer"></div>
-
-                      <div class="row">
-                        <div class="col-1 p-0 contact-icon">
+                    </div>
+                      
+                    <div class="contact-info">
+                      <div class="address">
+                        <div class="contact-icon">
                           <i class="fa fa-map-marker"></i>
                         </div>
-                        <div class="col-8">
+                        <div class="contact-add">
                           <p class="align-center contact-text">
                             408 Darshanam Arise, Gotri - Sevasi road, Gotri
                             Gujarat, India - 390 021
                           </p>
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-1 p-0 contact-icon">
+                      <div class="contact-details">
+                        <div class="contact-icon">
                           <i class="fa fa-phone"></i>
                         </div>
-                        <div class="col-4">
+                        <div class="contact-no">
                           <p class="align-center contact-text">
                             +91 99999 99999 <br />
                             +91 99999 99999
                           </p>
                         </div>
-                        <div class="col-1 p-0 contact-icon">
+                        <div class="contact-icon">
                           <i class="fa fa-envelope"></i>
                         </div>
-                        <div class="col-3">
+                        <div class="email-address">
                           <p class="align-center contact-text">
                             info@codemastr.com <br />
                             support@codemastr.com
                           </p>
                         </div>
                       </div>
-                      <div class="row mb-3">
-                        <div class="col-1 p-0 contact-icon">
+                      <div class="contact-time">
+                        <div class="contact-icon">
                           <i class="fa fa-clock-o"></i>
                         </div>
-                        <div class="col-8">
+                        <div class="schedule">
                           <p class="align-center contact-text">
                             Monday - Friday <br />
                             08:00 am - 05:00 pm
                           </p>
                         </div>
                       </div>
+                    </div>
                     </div>
                   </div>
                 </div>
