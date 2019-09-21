@@ -67,3 +67,19 @@ $(document).ready(function(){
         $(expertiseBoxCarousel).addClass("d-none");
       }
 });
+
+{/* <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <!-- <script type="text/javascript">
+   contact with email script start here
+Email.send({
+  Host : "localhost:8080/index.html",
+  Username : "Ayub Momin",
+  Password : "95786420",
+  To : 'aebie.9897@gmail.com',
+  From : "you@isp.com",
+  Subject : "This is the subject",
+  Body : "And this is the body"
+}).then(
+  
+message => alert(message)
+);</script> */}

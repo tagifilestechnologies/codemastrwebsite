@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./CSS/fullpage.css" />
     <link rel="stylesheet" href="./CSS/foundation.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
+    <script id='ze-snippet' src="https://static.zdassets.com/ekr/snippet.js?key=44abec5b-74b7-4b41-8016-1ff8fede45d0"> </script>
   </head>
   <body data-spy="scroll" data-target=".navbar" class="scroller">
     <!-- Main Header Area start Here -->
@@ -442,7 +443,7 @@
             </div>
           </div>
 
-          <div class="row d-md-none d-xs-block" data-fp-style="fp-section">
+          <div class="row d-lg-none d-xs-block" data-fp-style="fp-section">
             <div
               id="carouselExampleIndicators"
               class="carousel slide"
@@ -912,7 +913,7 @@
             />
             <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-6 shadow-lg p-0">
+                <div class="col-lg-6 col-sm-12 col-xs-12 shadow-lg p-0">
                   <div class="container min-container">
                     <img
                       src="./Images/cm-logo.svg"
@@ -1005,7 +1006,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-6 p-0" id="map">
+                <div class="col-lg-6 col-sm-12 col-xs-12 p-0" id="map">
                   <div class="map-bg-right">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.9936479999014!2d73.1296379147871!3d22.316079985315284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc86087aab399%3A0x7b3bbafdd74a1233!2sDarshanam+arise!5e0!3m2!1sen!2sin!4v1556004196220!5m2!1sen!2sin"
@@ -1260,5 +1261,24 @@
     <script src="./js/foundation.min.js"></script>
     <script src="./js/fullpage.js"></script>
     <script src="./js/Main.js"></script>
+    <script type="text/javascript">
+    zE('webWidget:on', 'chat:start', function() {
+    console.log('successfully started a Zendesk Chat!');
+  });
+
+      window.zESettings = {
+        webWidget: {
+          chat: {
+            suppress: false,
+            tags: ['Codemastr'],
+            notifications: {
+              mobile: {
+                disable: true
+              }
+            }
+          }
+        }
+      };
+    </script>
   </body>
 </html>
